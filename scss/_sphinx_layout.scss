@@ -23,6 +23,7 @@
   display: flex;
   position: relative;
   padding-top: 0;
+
   @include clearfix;
 
   @include sphinx-medium-size {
@@ -30,6 +31,10 @@
     float: left;
     width: 100%;
     display: block;
+
+    /* d.ai */
+    height: 100vh;
+    overflow: auto;
   }
 
   @include sphinx-full-size {
@@ -50,14 +55,13 @@
 
   @include sphinx-medium-size {
     margin-top: 0;
-    margin-left: 3%;
+    margin-left: rem(30px);
     width: $sphinx_article_width;
     float: left;
   }
 
   @include sphinx-full-size {
     width: 850px;
-    margin-left: 30px;
   }
 
   .main-content {
@@ -80,23 +84,30 @@
   overflow-y: hidden;
 
   @include sphinx-medium-size {
+    /* d.ai */
     display: block;
+    position: fixed;
+    right: 0;
+    width: 21%;
+    height: calc(100% - #{$desktop_header_height / 2});
     margin-left: 0;
-    width: 19%;
-    float: left;
-    height: 100%;
+    overflow: auto;
   }
 
   @include sphinx-full-size {
-    width: $desktop_menu_width - 70px;
+    /* d.ai */
+    position: fixed;
+    top: 45px;
+    right: 0;
+    width: calc(100% - 910px - #{$desktop_menu_width});
   }
 }
 
 .pytorch-side-scroll {
   @include sphinx-medium-size {
     position: relative;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    // overflow-x: hidden;
+    // overflow-y: scroll;
     height: 100%;
   }
 }
@@ -521,6 +532,8 @@
 }
 
 .pytorch-right-menu .pytorch-side-scroll {
+  padding: rem(30px) 0;
+
   @include sphinx-medium-size {
     width: $sphinx_right_menu_scroll_wrapper_width;
   }
@@ -529,15 +542,17 @@
     width: 400px;
   }
 
-  padding-top: 20px;
-
   > ul {
-    padding-left: 10%;
-    padding-right: 10%;
     margin-bottom: 0;
 
+    /* d.ai */
+    padding-left: rem(30px);
+    padding-left: rem(30px);
+
     @include sphinx-full-size {
-      padding-left: 25px;
+      /* d.ai */
+      padding-left: rem(15px);
+      // margin-left: rem(-15px);
     }
 
     > li > a.reference.internal  {
@@ -648,11 +663,11 @@
   @include sphinx-medium-size {
     font-size: rem(14px);
     float: left;
-    margin-left: $sphinx_right_menu_wrap_left_margin;
+    margin-left: rem(30px);
   }
 
   @include sphinx-full-size {
-    margin-left: rem(30px);
+    // margin-left: rem(30px);
   }
 }
 
