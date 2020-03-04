@@ -9,9 +9,9 @@ $sphinx_left_menu_scroll_wrapper_width: 120%;
 $sphinx_content_wrap_width: 71%;
 $sphinx_content_wrap_left_margin: 26.4%;
 
-$sphinx_article_width: 75%;
+$sphinx_article_width: 70%;
 
-$sphinx_right_menu_wrap_left_margin: 2%;
+$sphinx_right_menu_wrap_left_margin: 20px;
 $sphinx_right_menu_left_margin: 81.5%;
 $sphinx_right_menu_scroll_wrapper_width: 120%;
 
@@ -137,6 +137,8 @@ ul.pytorch-breadcrumbs {
 }
 
 .rst-content footer {
+  /* d.ai */
+  padding-bottom: 2rem;
 
   .helpful-hr.hr-top {
     margin-bottom: rem(-1px);
@@ -170,7 +172,7 @@ ul.pytorch-breadcrumbs {
   }
 
   div[role="contentinfo"] {
-    padding-top: rem(40px);
+    // padding-top: rem(40px);
     p {
       margin-bottom: 0;
     }

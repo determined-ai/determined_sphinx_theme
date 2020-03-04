@@ -23,6 +23,11 @@
   display: flex;
   position: relative;
   padding-top: 0;
+
+  /* d.ai */
+  height: 100vh;
+  overflow: auto;
+
   @include clearfix;
 
   @include sphinx-medium-size {
@@ -80,15 +85,22 @@
   overflow-y: hidden;
 
   @include sphinx-medium-size {
+    /* d.ai */
     display: block;
+    position: fixed;
+    right: 0;
+    width: 21%;
+    height: calc(100% - #{$desktop_header_height / 2});
     margin-left: 0;
-    width: 19%;
-    float: left;
-    height: 100%;
+    overflow: auto;
   }
 
   @include sphinx-full-size {
-    width: $desktop_menu_width - 70px;
+    /* d.ai */
+    position: fixed;
+    top: 45px;
+    right: 0;
+    width: calc(100% - 910px - #{$desktop_menu_width});
   }
 }
 
@@ -529,7 +541,7 @@
     width: 400px;
   }
 
-  padding-top: 20px;
+  padding: 20px 0;
 
   > ul {
     padding-left: 10%;
@@ -537,7 +549,8 @@
     margin-bottom: 0;
 
     @include sphinx-full-size {
-      padding-left: 25px;
+      /* d.ai */
+      padding-left: 15px;
     }
 
     > li > a.reference.internal  {

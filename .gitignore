@@ -11,3 +11,4 @@ __pycache__
 dist/
 *.egg-info/
 scss/vendor/*
+pt_lightning_sphinx_theme/static/
