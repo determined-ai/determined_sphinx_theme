@@ -52,9 +52,10 @@ window.scrollToAnchor = {
         match = document.getElementById(href.slice(1));
 
         if(match) {
-          var anchorOffset = $(match).offset().top - this.getFixedOffset();
+          var anchorOffset = $(match).offset().top - this.getFixedOffset() + $('.pytorch-content-left').scrollTop();
 
-          $('html, body').scrollTop(anchorOffset);
+          // $('html, body, .pytorch-content-left').scrollTop(anchorOffset);
+          $('.pytorch-content-left').animate({ scrollTop: anchorOffset });
 
           // Add the state to history as-per normal anchor links
           if(HISTORY_SUPPORT && pushToHistory) {
