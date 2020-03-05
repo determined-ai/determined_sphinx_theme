@@ -3,16 +3,21 @@ window.mobileTOC = {
     $("[data-behavior='toggle-table-of-contents']").on("click", function(e) {
       e.preventDefault();
 
-      var $parent = $(this).parent();
-
-      if ($parent.hasClass("is-open")) {
-        $parent.removeClass("is-open");
-        $(".pytorch-left-menu").slideUp(200, function() {
-          $(this).css({display: ""});
-        });
+      if ($(this).hasClass("is-open")) {
+        $(this).removeClass("is-open");
+        $(".pytorch-left-menu")
+          .stop(true, true)
+          .animate({ top: -100, opacity: 0 }, 200, function() {
+            this.css('display', 'none');
+          });
       } else {
-        $parent.addClass("is-open");
-        $(".pytorch-left-menu").slideDown(200);
+        $(this).addClass("is-open");
+        $(".pytorch-left-menu")
+          .stop(true, true)
+          .css('display', 'block')
+          .css('top', '-100px')
+          .css('opacity', 0)
+          .animate({ top: 0, opacity: 1 }, 200);
       }
     });
   }
