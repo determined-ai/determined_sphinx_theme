@@ -159,6 +159,8 @@
     <!-- <div class="pytorch-side-scroll"> -->
     <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
       <div class="pytorch-left-menu-search">
+        <img src="{{ pathto('_static/images/logo-determined-ai.svg', 1) }}">
+
         {% block sidebartitle %}
 
         {% if theme_display_version %}
@@ -167,9 +169,7 @@
         {%- set nav_version = current_version %}
         {% endif %}
         {% if nav_version %}
-        <div class="version">
-          {{ nav_version }}
-        </div>
+        <div class="version"><i>version {{ nav_version }}</i></div>
         {% endif %}
         {% endif %}
 
@@ -178,24 +178,27 @@
         {% endblock %}
       </div>
 
-      {% block menu %}
-      {#
+      <div class="divider"></div>
+      <div class="toc">
+        {% block menu %}
+        {#
               The singlehtml builder doesn't handle this toctree call when the
               toctree is empty. Skip building this for now.
             #}
-      {% if 'singlehtml' not in builder %}
-      {% set global_toc = toctree(maxdepth=1,
+        {% if 'singlehtml' not in builder %}
+        {% set global_toc = toctree(maxdepth=1,
                                           collapse=theme_collapse_navigation|tobool,
                                           includehidden=theme_includehidden|tobool,
                                           titles_only=theme_titles_only|tobool) %}
-      {% endif %}
-      {% if global_toc %}
-      {{ global_toc }}
-      {% else %}
-      <!-- Local TOC -->
-      <div class="local-toc">{{ toc }}</div>
-      {% endif %}
-      {% endblock %}
+        {% endif %}
+        {% if global_toc %}
+        {{ global_toc }}
+        {% else %}
+        <!-- Local TOC -->
+        <div class="local-toc">{{ toc }}</div>
+        {% endif %}
+        {% endblock %}
+      </div>
     </div>
     <!-- </div> -->
   </nav>
@@ -314,10 +317,10 @@
 
   <!-- Begin Footer -->
 
+  <!--
   <div class="container-fluid docs-tutorials-resources" id="docs-tutorials-resources">
     <div class="container">
       <div class="row">
-        <!--
         <div class="col-md-4 text-center">
           <h2>Docs</h2>
           <p>Access comprehensive developer documentation for PyTorch</p>
@@ -335,10 +338,11 @@
           <p>Find development resources and get your questions answered</p>
           <a class="with-right-arrow" href="{{ theme_variables.external_urls['resources'] }}">View Resources</a>
         </div>
-        -->
+
       </div>
     </div>
   </div>
+  -->
 
   <!--
   <footer class="site-footer">

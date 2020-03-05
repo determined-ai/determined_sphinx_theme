@@ -882,7 +882,28 @@ a:hover {
 }
 
 .version {
-  padding-bottom: rem(16px);
+  display: flex;
+  justify-content: center;
+  padding: rem(5px) 0 rem(20px) 0;
+
+  i {
+    background-color: $action_blue;
+    border-radius: rem(3px);
+    color: $white;
+    padding: 0 rem(6px);
+    font-size: rem(14px);
+  }
+}
+
+.divider {
+  width: 100%;
+  height: rem(1px);
+  background-color: $smoky_grey;
+}
+
+.toc {
+  padding: rem(30px);
+  overflow: auto;
 }
 
 .pytorch-call-to-action-links {
