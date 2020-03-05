@@ -137,9 +137,6 @@ ul.pytorch-breadcrumbs {
 }
 
 .rst-content footer {
-  /* d.ai */
-  padding-bottom: 2rem;
-
   .helpful-hr.hr-top {
     margin-bottom: rem(-1px);
   }
@@ -788,17 +785,20 @@ article.pytorch-article {
 }
 
 .pytorch-breadcrumbs-wrapper {
-  width: 100%;
+  // width: 100%;
+  flex-basis: 70%;
+  padding: 0 rem(30px);
 
   @include sphinx-medium-size {
-    float: left;
-    margin-left: rem(30px);
-    width: $sphinx_article_width;
+    // float: left;
+    // margin-left: rem(30px);
+    // width: $sphinx_article_width;
   }
 
   @include sphinx-full-size {
-    width: 850px;
-    margin-left: rem(30px);
+    // width: 850px;
+    // margin-left: rem(30px);
+    flex-basis: rem(850px);
   }
 
   .pytorch-breadcrumbs-aside {

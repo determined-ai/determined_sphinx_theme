@@ -4,6 +4,9 @@
 
 .pytorch-container {
   flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
   
   margin: 0 auto;
   padding: 0 rem(30px);
@@ -26,26 +29,31 @@
 }
 
 .pytorch-content-wrap {
-  background-color: #ffffff;
+  flex-grow: 1;
   display: flex;
-  position: relative;
-  padding-top: 0;
+  // position: relative;
+  width: 100%;
+  // height: 100%;
+  height: calc(100% - #{$desktop_header_height / 2});
+  background-color: #ffffff;
+  // overflow: auto;
+  // padding-top: 0;
 
-  @include clearfix;
+  // @include clearfix;
 
   @include sphinx-medium-size {
-    padding-top: 45px;
-    float: left;
-    width: 100%;
-    display: block;
+    // padding-top: 45px;
+    // float: left;
+    // width: 100%;
+    // display: block;
 
     /* d.ai */
-    height: 100vh;
-    overflow: auto;
+    // height: 100vh;
+    // overflow: auto;
   }
 
   @include sphinx-full-size {
-    width: 100%;
+    // width: 100%;
   }
 }
 
@@ -57,22 +65,26 @@
 }
 
 .pytorch-content-left {
-  margin-top: rem(40px);
-  width: 100%;
+  // width: 100%;
+  // margin-top: rem(40px);
+  flex-basis: 70%;
+  padding: rem(30px);
+  // overflow: scroll;
 
   @include sphinx-medium-size {
-    margin-top: 0;
-    margin-left: rem(30px);
-    width: $sphinx_article_width;
-    float: left;
+    // margin-top: 0;
+    // margin-left: rem(30px);
+    // width: $sphinx_article_width;
+    // float: left;
   }
 
   @include sphinx-full-size {
-    width: 850px;
+    // width: 850px;
+    flex-basis: rem(850px);
   }
 
   .main-content {
-    padding-top: rem(15px);
+    // padding-top: rem(15px);
     ul.simple {
       padding-bottom: rem(20px);
     }
@@ -85,28 +97,30 @@
 }
 
 .pytorch-content-right {
+  flex-grow: 1;
   display: none;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  padding: rem(30px) 0;
+  // position: relative;
+  // overflow-x: hidden;
+  // overflow-y: hidden;
 
   @include sphinx-medium-size {
     /* d.ai */
     display: block;
-    position: fixed;
-    right: 0;
-    width: 21%;
-    height: calc(100% - #{$desktop_header_height / 2});
-    margin-left: 0;
+    // position: fixed;
+    // right: 0;
+    // width: 21%;
+    // height: calc(100% - #{$desktop_header_height / 2});
+    // margin-left: 0;
     overflow: auto;
   }
 
   @include sphinx-full-size {
     /* d.ai */
-    position: fixed;
-    top: 45px;
-    right: 0;
-    width: calc(100% - 910px - #{$desktop_menu_width});
+    // position: fixed;
+    // top: 45px;
+    // right: 0;
+    // width: calc(100% - 910px - #{$desktop_menu_width});
   }
 }
 
@@ -631,35 +645,35 @@
   z-index: 201;
 
   @include sphinx-medium-size {
-    left: 0;
+    // left: 0;
     display: flex;
-    height: $desktop_header_height / 2;
-    padding-left: 0;
-    width: 100%;
-    position: absolute;
+    flex-basis: rem($desktop_header_height / 2);
+    flex-shrink: 0;
+    // padding-left: 0;
+    // position: absolute;
     z-index: 1;
 
-    &.left-menu-is-fixed {
-      position: fixed;
-      top: 0;
-      left: 25%;
-      padding-left: 0;
-      right: 0;
-      width: 75%;
-    }
+    // &.left-menu-is-fixed {
+    //   position: fixed;
+    //   top: 0;
+    //   left: 25%;
+    //   padding-left: 0;
+    //   right: 0;
+    //   width: 75%;
+    // }
   }
 
   @include sphinx-full-size {
-    left: 0;
-    right: 0;
+    // left: 0;
+    // right: 0;
     width: auto;
     z-index: 1;
 
-    &.left-menu-is-fixed {
-      left: $desktop_menu_width;
-      right: 0;
-      width: auto;
-    }
+    // &.left-menu-is-fixed {
+    //   left: $desktop_menu_width;
+    //   right: 0;
+    //   width: auto;
+    // }
   }
 
   ul, li {
