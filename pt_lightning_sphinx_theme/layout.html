@@ -150,128 +150,133 @@
 
   {# SIDE NAV, TOGGLES ON MOBILE #}
 
-  <div class="table-of-contents-link-wrapper">
-    <span>Table of Contents</span>
-    <a href="#" class="toggle-table-of-contents" data-behavior="toggle-table-of-contents"></a>
+  <div class="table-of-contents-link-wrapper" data-behavior="toggle-table-of-contents">
+    <img src="{{ pathto('_static/images/logo-determined-ai.svg', 1) }}" class="logo-dai" />
+    <a href="#" class="toggle-table-of-contents"></a>
   </div>
 
-  <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
-    <!-- <div class="pytorch-side-scroll"> -->
-    <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <div class="pytorch-left-menu-search">
-        <img src="{{ pathto('_static/images/logo-determined-ai.svg', 1) }}">
+  <div class="main">
 
-        {% block sidebartitle %}
-
-        {% if theme_display_version %}
-        {%- set nav_version = version %}
-        {% if READTHEDOCS and current_version %}
-        {%- set nav_version = current_version %}
-        {% endif %}
-        {% if nav_version %}
-        <div class="version"><i>version {{ nav_version }}</i></div>
-        {% endif %}
-        {% endif %}
-
-        {% include "searchbox.html" %}
-
-        {% endblock %}
-      </div>
-
-      <div class="divider"></div>
-      <div class="toc">
-        {% block menu %}
-        {#
-              The singlehtml builder doesn't handle this toctree call when the
-              toctree is empty. Skip building this for now.
-            #}
-        {% if 'singlehtml' not in builder %}
-        {% set global_toc = toctree(maxdepth=1,
-                                          collapse=theme_collapse_navigation|tobool,
-                                          includehidden=theme_includehidden|tobool,
-                                          titles_only=theme_titles_only|tobool) %}
-        {% endif %}
-        {% if global_toc %}
-        {{ global_toc }}
-        {% else %}
-        <!-- Local TOC -->
-        <div class="local-toc">{{ toc }}</div>
-        {% endif %}
-        {% endblock %}
-      </div>
-    </div>
-    <!-- </div> -->
-  </nav>
-
-  <div class="pytorch-container">
-    <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
-      <div class="pytorch-breadcrumbs-wrapper">
-        {% include "breadcrumbs.html" %}
-      </div>
-
-      <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
-        Shortcuts
-      </div>
-    </div>
-
-    <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
-      <div class="pytorch-content-left">
-
-        {% if theme_pytorch_project == 'tutorials' %}
-
-        <div class="pytorch-call-to-action-links">
-          <div id="tutorial-type">{{ pagename }}</div>
-
-          <div id="google-colab-link">
-            <img class="call-to-action-img" src="{{ pathto('_static/images/pytorch-colab.svg', 1) }}" />
-            <div class="call-to-action-desktop-view">Run in Google Colab</div>
-            <div class="call-to-action-mobile-view">Colab</div>
+    <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
+      <!-- <div class="pytorch-side-scroll"> -->
+      <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <div class="pytorch-left-menu-search">
+          <div class="logo">
+            <img src="{{ pathto('_static/images/logo-determined-ai.svg', 1) }}" class="logo-dai" />
           </div>
-          <div id="download-notebook-link">
-            <img class="call-to-action-notebook-img" src="{{ pathto('_static/images/pytorch-download.svg', 1) }}" />
-            <div class="call-to-action-desktop-view">Download Notebook</div>
-            <div class="call-to-action-mobile-view">Notebook</div>
-          </div>
-          <div id="github-view-link">
-            <img class="call-to-action-img" src="{{ pathto('_static/images/pytorch-github.svg', 1) }}" />
-            <div class="call-to-action-desktop-view">View on GitHub</div>
-            <div class="call-to-action-mobile-view">GitHub</div>
-          </div>
+
+          {% block sidebartitle %}
+
+          {% if theme_display_version %}
+          {%- set nav_version = version %}
+          {% if READTHEDOCS and current_version %}
+          {%- set nav_version = current_version %}
+          {% endif %}
+          <!-- {% if nav_version %}
+          <div class="version"><i>v{{ nav_version }}</i></div>
+          {% endif %} -->
+          {% endif %}
+
+          {% include "searchbox.html" %}
+
+          {% endblock %}
         </div>
 
-        {% endif %}
-
-        {%- block content %}
-        {% if theme_style_external_links|tobool %}
-        <div class="rst-content style-external-links">
+        <div class="toc">
+          {% block menu %}
+          {#
+                The singlehtml builder doesn't handle this toctree call when the
+                toctree is empty. Skip building this for now.
+              #}
+          {% if 'singlehtml' not in builder %}
+          {% set global_toc = toctree(maxdepth=1,
+                                            collapse=theme_collapse_navigation|tobool,
+                                            includehidden=theme_includehidden|tobool,
+                                            titles_only=theme_titles_only|tobool) %}
+          {% endif %}
+          {% if global_toc %}
+          {{ global_toc }}
           {% else %}
-          <div class="rst-content">
-            {% endif %}
-            <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
-              {%- block document %}
-              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
-                {% block body %}{% endblock %}
-              </article>
-              {% if self.comments()|trim %}
-              <div class="articleComments">
-                {% block comments %}{% endblock %}
+          <!-- Local TOC -->
+          <div class="local-toc">{{ toc }}</div>
+          {% endif %}
+          {% endblock %}
+        </div>
+      </div>
+      <!-- </div> -->
+    </nav>
+
+    <div class="pytorch-container">
+      <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
+        <div class="pytorch-breadcrumbs-wrapper">
+          {% include "breadcrumbs.html" %}
+        </div>
+
+        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
+          Shortcuts
+        </div>
+      </div>
+
+      <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
+        <div class="pytorch-content-left">
+
+          {% if theme_pytorch_project == 'tutorials' %}
+
+          <div class="pytorch-call-to-action-links">
+            <div id="tutorial-type">{{ pagename }}</div>
+
+            <div id="google-colab-link">
+              <img class="call-to-action-img" src="{{ pathto('_static/images/pytorch-colab.svg', 1) }}" />
+              <div class="call-to-action-desktop-view">Run in Google Colab</div>
+              <div class="call-to-action-mobile-view">Colab</div>
+            </div>
+            <div id="download-notebook-link">
+              <img class="call-to-action-notebook-img" src="{{ pathto('_static/images/pytorch-download.svg', 1) }}" />
+              <div class="call-to-action-desktop-view">Download Notebook</div>
+              <div class="call-to-action-mobile-view">Notebook</div>
+            </div>
+            <div id="github-view-link">
+              <img class="call-to-action-img" src="{{ pathto('_static/images/pytorch-github.svg', 1) }}" />
+              <div class="call-to-action-desktop-view">View on GitHub</div>
+              <div class="call-to-action-mobile-view">GitHub</div>
+            </div>
+          </div>
+
+          {% endif %}
+
+          {%- block content %}
+          {% if theme_style_external_links|tobool %}
+          <div class="rst-content style-external-links">
+            {% else %}
+            <div class="rst-content">
+              {% endif %}
+              <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
+                {%- block document %}
+                <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
+                  {% block body %}{% endblock %}
+                </article>
+                {% if self.comments()|trim %}
+                <div class="articleComments">
+                  {% block comments %}{% endblock %}
+                </div>
+                {% endif%}
               </div>
-              {% endif%}
+              {%- endblock %}
+              {% include "footer.html" %}
             </div>
             {%- endblock %}
-            {% include "footer.html" %}
           </div>
-          {%- endblock %}
-        </div>
 
-        <div class="pytorch-content-right" id="pytorch-content-right">
-          <div class="pytorch-right-menu" id="pytorch-right-menu">
-            <!-- <div class="pytorch-side-scroll" id="pytorch-side-scroll-right"> -->
-            {{ toc }}
-            <!-- </div> -->
+          <div class="pytorch-content-right" id="pytorch-content-right">
+            <div class="pytorch-right-menu" id="pytorch-right-menu">
+              <!-- <div class="pytorch-side-scroll" id="pytorch-side-scroll-right"> -->
+              {{ toc }}
+              <!-- </div> -->
+            </div>
           </div>
-        </div>
-    </section>
+      </section>
+    </div>
+
   </div>
 
   {% include "versions.html" %}

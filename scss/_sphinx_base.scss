@@ -71,6 +71,31 @@ p {
   }
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  height: $header_height;
+  padding: 0 rem(30px);
+  border-bottom: solid 1px $border_grey;
+}
+
+.logo-dai {
+  width: 128px;
+  height: 20px;
+}
+
+.version {
+  display: flex;
+  justify-content: center;
+  padding-bottom: rem(20px);
+
+  i {
+    color: $action-blue;
+    font-size: rem(14px);
+    font-style: normal;
+  }
+}
+
 .wy-breadcrumbs li a {
   color: $red_orange;
 }
@@ -91,11 +116,16 @@ ul.pytorch-breadcrumbs {
 }
 
 .table-of-contents-link-wrapper {
-  display: block;
-  margin-top: 0;
-  padding: rem(20px) rem(30px);
-  background-color: $light_grey;
+  display: flex;
+  align-items: center;
+
   position: relative;
+  height: $mobile_toc_header_height;
+  padding: 0 rem(30px);
+  border-bottom: solid 1px $border_grey;
+  background-color: $white;
+  z-index: 201;
+
   color: $slate;
   font-size: rem(20px);
 
@@ -879,26 +909,6 @@ a:hover {
   ul li.active a {
     color: $red_orange;
   }
-}
-
-.version {
-  display: flex;
-  justify-content: center;
-  padding: rem(5px) 0 rem(20px) 0;
-
-  i {
-    background-color: $action_blue;
-    border-radius: rem(3px);
-    color: $white;
-    padding: 0 rem(6px);
-    font-size: rem(14px);
-  }
-}
-
-.divider {
-  width: 100%;
-  height: rem(1px);
-  background-color: $smoky_grey;
 }
 
 .toc {

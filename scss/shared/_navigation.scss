@@ -1,23 +1,23 @@
-.header-holder {
-  height: $mobile_header_height;
+// .header-holder {
+//   height: $mobile_header_height;
 
-  @include full-nav-menu-desktop {
-    height: $desktop_header_height;
-  }
+//   @include full-nav-menu-desktop {
+//     height: $desktop_header_height;
+//   }
 
-  align-items: center;
-  display: flex;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-  background-color: $white;
-  border-bottom: 1px solid #e2e2e2;
-}
+//   align-items: center;
+//   display: flex;
+//   left: 0;
+//   margin-left: auto;
+//   margin-right: auto;
+//   position: fixed;
+//   right: 0;
+//   top: 0;
+//   width: 100%;
+//   z-index: 9999;
+//   background-color: $white;
+//   border-bottom: 1px solid $border_grey;
+// }
 
 .header-container {
   position: relative;
