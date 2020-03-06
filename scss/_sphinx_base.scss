@@ -84,18 +84,6 @@ p {
   height: 20px;
 }
 
-.version {
-  display: flex;
-  justify-content: center;
-  padding-bottom: rem(20px);
-
-  i {
-    color: $action-blue;
-    font-size: rem(14px);
-    font-style: normal;
-  }
-}
-
 .wy-breadcrumbs li a {
   color: $red_orange;
 }
