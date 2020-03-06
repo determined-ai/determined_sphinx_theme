@@ -5,13 +5,15 @@ window.mobileTOC = {
 
       if ($(this).hasClass("is-open")) {
         $(this).removeClass("is-open");
+        $(".hamburger").removeClass("is-active");
         $(".pytorch-left-menu")
           .stop(true, true)
           .animate({ top: -100, opacity: 0 }, 200, function() {
-            this.css('display', 'none');
+            $(this).css('display', 'none');
           });
       } else {
         $(this).addClass("is-open");
+        $(".hamburger").addClass("is-active");
         $(".pytorch-left-menu")
           .stop(true, true)
           .css('display', 'block')
