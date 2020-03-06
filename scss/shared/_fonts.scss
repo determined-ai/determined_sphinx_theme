@@ -1,66 +1,120 @@
 @font-face {
-  font-family: FreightSans;
-  font-weight: 700;
+  font-family: 'Objektiv Mk3';
   font-style: normal;
-  src: url("../fonts/FreightSans/freight-sans-bold.woff2") format("woff2"),
-       url("../fonts/FreightSans/freight-sans-bold.woff") format("woff");
+  font-weight: normal;
+  src:
+    url('../ObjektivMk3/objektiv-mk3-regular.woff2?ada469') format('woff2'),
+    url('../ObjektivMk3/objektiv-mk3-regular.woff?ada469') format('woff');
 }
 
 @font-face {
-  font-family: FreightSans;
-  font-weight: 700;
+  font-family: 'Objektiv Mk3';
   font-style: italic;
-  src: url("../fonts/FreightSans/freight-sans-bold-italic.woff2") format("woff2"),
-       url("../fonts/FreightSans/freight-sans-bold-italic.woff") format("woff");
+  font-weight: normal;
+  src:
+    url('../ObjektivMk3/objektiv-mk3-regular-italic.woff2?ada469') format('woff2'),
+    url('../ObjektivMk3/objektiv-mk3-regular-italic.woff?ada469') format('woff');
 }
 
 @font-face {
-  font-family: FreightSans;
-  font-weight: 500;
+  font-family: 'Objektiv Mk3';
   font-style: normal;
-  src: url("../fonts/FreightSans/freight-sans-medium.woff2") format("woff2"),
-       url("../fonts/FreightSans/freight-sans-medium.woff") format("woff");
+  font-weight: bold;
+  src:
+    url('../ObjektivMk3/objektiv-mk3-bold.woff2?ada469') format('woff2'),
+    url('../ObjektivMk3/objektiv-mk3-bold.woff?ada469') format('woff');
 }
 
 @font-face {
-  font-family: FreightSans;
-  font-weight: 500;
+  font-family: 'Objektiv Mk3';
   font-style: italic;
-  src: url("../fonts/FreightSans/freight-sans-medium-italic.woff2") format("woff2"),
-       url("../fonts/FreightSans/freight-sans-medium-italic.woff") format("woff");
+  font-weight: bold;
+  src:
+    url('../ObjektivMk3/objektiv-mk3-bold-italic.woff2?ada469') format('woff2'),
+    url('../ObjektivMk3/objektiv-mk3-bold-italic.woff?ada469') format('woff');
 }
 
 @font-face {
-  font-family: FreightSans;
-  font-weight: 100;
+  font-family: 'Objektiv Mk3';
+  font-style: italic;
+  font-weight: bold;
+  src:
+    url('../ObjektivMk3/objektiv-mk3-bold-italic.woff2?ada469') format('woff2'),
+    url('../ObjektivMk3/objektiv-mk3-bold-italic.woff?ada469') format('woff');
+}
+
+@font-face {
+  font-family: 'Determined AI';
   font-style: normal;
-  src: url("../fonts/FreightSans/freight-sans-light.woff2") format("woff2"),
-       url("../fonts/FreightSans/freight-sans-light.woff") format("woff");
+  font-weight: normal;
+  src:
+    url('/fonts/determined-ai.woff2?308ece') format('woff2'),
+    url('/fonts/determined-ai.woff?308ece') format('woff');
 }
 
-@font-face {
-  font-family: FreightSans;
-  font-weight: 100;
-  font-style: italic;
-  src: url("../fonts/FreightSans/freight-sans-light-italic.woff2") format("woff2"),
-       url("../fonts/FreightSans/freight-sans-light-italic.woff") format("woff");
-}
+// @font-face {
+//   font-family: FreightSans;
+//   font-weight: 700;
+//   font-style: normal;
+//   src: url("../fonts/FreightSans/freight-sans-bold.woff2") format("woff2"),
+//        url("../fonts/FreightSans/freight-sans-bold.woff") format("woff");
+// }
 
-@font-face {
-  font-family: FreightSans;
-  font-weight: 400;
-  font-style: italic;
-  src: url("../fonts/FreightSans/freight-sans-book-italic.woff2") format("woff2"),
-       url("../fonts/FreightSans/freight-sans-book-italic.woff") format("woff");
-}
+// @font-face {
+//   font-family: FreightSans;
+//   font-weight: 700;
+//   font-style: italic;
+//   src: url("../fonts/FreightSans/freight-sans-bold-italic.woff2") format("woff2"),
+//        url("../fonts/FreightSans/freight-sans-bold-italic.woff") format("woff");
+// }
 
-@font-face {
-  font-family: FreightSans;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/FreightSans/freight-sans-book.woff2") format("woff2"),
-       url("../fonts/FreightSans/freight-sans-book.woff") format("woff");
-}
+// @font-face {
+//   font-family: FreightSans;
+//   font-weight: 500;
+//   font-style: normal;
+//   src: url("../fonts/FreightSans/freight-sans-medium.woff2") format("woff2"),
+//        url("../fonts/FreightSans/freight-sans-medium.woff") format("woff");
+// }
+
+// @font-face {
+//   font-family: FreightSans;
+//   font-weight: 500;
+//   font-style: italic;
+//   src: url("../fonts/FreightSans/freight-sans-medium-italic.woff2") format("woff2"),
+//        url("../fonts/FreightSans/freight-sans-medium-italic.woff") format("woff");
+// }
+
+// @font-face {
+//   font-family: FreightSans;
+//   font-weight: 100;
+//   font-style: normal;
+//   src: url("../fonts/FreightSans/freight-sans-light.woff2") format("woff2"),
+//        url("../fonts/FreightSans/freight-sans-light.woff") format("woff");
+// }
+
+// @font-face {
+//   font-family: FreightSans;
+//   font-weight: 100;
+//   font-style: italic;
+//   src: url("../fonts/FreightSans/freight-sans-light-italic.woff2") format("woff2"),
+//        url("../fonts/FreightSans/freight-sans-light-italic.woff") format("woff");
+// }
+
+// @font-face {
+//   font-family: FreightSans;
+//   font-weight: 400;
+//   font-style: italic;
+//   src: url("../fonts/FreightSans/freight-sans-book-italic.woff2") format("woff2"),
+//        url("../fonts/FreightSans/freight-sans-book-italic.woff") format("woff");
+// }
+
+// @font-face {
+//   font-family: FreightSans;
+//   font-weight: 400;
+//   font-style: normal;
+//   src: url("../fonts/FreightSans/freight-sans-book.woff2") format("woff2"),
+//        url("../fonts/FreightSans/freight-sans-book.woff") format("woff");
+// }
 
 @font-face {
   font-family: IBMPlexMono;
@@ -68,10 +122,8 @@
   font-style: normal;
   unicode-range: u+0020-007f;
   src: local("IBMPlexMono-SemiBold"),
-    url("../fonts/IBMPlexMono/IBMPlexMono-SemiBold.woff2")
-      format("woff2"),
-    url("../fonts/IBMPlexMono/IBMPlexMono-SemiBold.woff")
-      format("woff");
+    url("../fonts/IBMPlexMono/IBMPlexMono-SemiBold.woff2") format("woff2"),
+    url("../fonts/IBMPlexMono/IBMPlexMono-SemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -80,10 +132,8 @@
   font-style: normal;
   unicode-range: u+0020-007f;
   src: local("IBMPlexMono-Medium"),
-    url("../fonts/IBMPlexMono/IBMPlexMono-Medium.woff2")
-      format("woff2"),
-    url("../fonts/IBMPlexMono/IBMPlexMono-Medium.woff")
-      format("woff");
+    url("../fonts/IBMPlexMono/IBMPlexMono-Medium.woff2") format("woff2"),
+    url("../fonts/IBMPlexMono/IBMPlexMono-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -92,10 +142,8 @@
   font-style: normal;
   unicode-range: u+0020-007f;
   src: local("IBMPlexMono-Regular"),
-    url("../fonts/IBMPlexMono/IBMPlexMono-Regular.woff2")
-      format("woff2"),
-    url("../fonts/IBMPlexMono/IBMPlexMono-Regular.woff")
-      format("woff");
+    url("../fonts/IBMPlexMono/IBMPlexMono-Regular.woff2") format("woff2"),
+    url("../fonts/IBMPlexMono/IBMPlexMono-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -104,8 +152,6 @@
   font-style: normal;
   unicode-range: u+0020-007f;
   src: local("IBMPlexMono-Light"),
-    url("../fonts/IBMPlexMono/IBMPlexMono-Light.woff2")
-      format("woff2"),
-    url("../fonts/IBMPlexMono/IBMPlexMono-Light.woff")
-      format("woff");
+    url("../fonts/IBMPlexMono/IBMPlexMono-Light.woff2") format("woff2"),
+    url("../fonts/IBMPlexMono/IBMPlexMono-Light.woff") format("woff");
 }

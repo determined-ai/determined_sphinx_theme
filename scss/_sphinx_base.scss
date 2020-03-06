@@ -46,7 +46,7 @@ $sphinx_shortcuts_left_margin: 78%;
 html {
   height: 100%;
   @include desktop {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -698,7 +698,7 @@ article.pytorch-article {
     }
 
     code, kbd, pre, samp, span.pre {
-      font-family: FreightSans, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-family: 'Objektiv Mk3', Helvetica Neue, Helvetica, Arial, sans-serif;
     }
   }
 }
