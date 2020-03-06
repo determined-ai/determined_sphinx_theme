@@ -118,10 +118,11 @@ ul.pytorch-breadcrumbs {
 .table-of-contents-link-wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   position: relative;
   height: $mobile_toc_header_height;
-  padding: 0 rem(30px);
+  padding: 0 20px 0 30px;
   border-bottom: solid 1px $border_grey;
   background-color: $white;
   z-index: 201;
