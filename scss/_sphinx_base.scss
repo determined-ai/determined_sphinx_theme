@@ -9,9 +9,9 @@ $sphinx_left_menu_scroll_wrapper_width: 120%;
 $sphinx_content_wrap_width: 71%;
 $sphinx_content_wrap_left_margin: 26.4%;
 
-$sphinx_article_width: 75%;
+$sphinx_article_width: 70%;
 
-$sphinx_right_menu_wrap_left_margin: 2%;
+$sphinx_right_menu_wrap_left_margin: 20px;
 $sphinx_right_menu_left_margin: 81.5%;
 $sphinx_right_menu_scroll_wrapper_width: 120%;
 
@@ -46,7 +46,7 @@ $sphinx_shortcuts_left_margin: 78%;
 html {
   height: 100%;
   @include desktop {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -71,6 +71,19 @@ p {
   }
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  height: $header_height;
+  padding: 0 rem(30px);
+  border-bottom: solid 1px $border_grey;
+}
+
+.logo-dai {
+  width: 128px;
+  height: 20px;
+}
+
 .wy-breadcrumbs li a {
   color: $red_orange;
 }
@@ -91,11 +104,17 @@ ul.pytorch-breadcrumbs {
 }
 
 .table-of-contents-link-wrapper {
-  display: block;
-  margin-top: 0;
-  padding: rem(20px) rem(30px);
-  background-color: $light_grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   position: relative;
+  height: $mobile_toc_header_height;
+  padding: 0 20px 0 30px;
+  border-bottom: solid 1px $border_grey;
+  background-color: $white;
+  z-index: 201;
+
   color: $slate;
   font-size: rem(20px);
 
@@ -137,7 +156,6 @@ ul.pytorch-breadcrumbs {
 }
 
 .rst-content footer {
-
   .helpful-hr.hr-top {
     margin-bottom: rem(-1px);
   }
@@ -170,7 +188,7 @@ ul.pytorch-breadcrumbs {
   }
 
   div[role="contentinfo"] {
-    padding-top: rem(40px);
+    // padding-top: rem(40px);
     p {
       margin-bottom: 0;
     }
@@ -668,7 +686,7 @@ article.pytorch-article {
     }
 
     code, kbd, pre, samp, span.pre {
-      font-family: FreightSans, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-family: 'Objektiv Mk3', Helvetica Neue, Helvetica, Arial, sans-serif;
     }
   }
 }
@@ -786,17 +804,20 @@ article.pytorch-article {
 }
 
 .pytorch-breadcrumbs-wrapper {
-  width: 100%;
+  // width: 100%;
+  flex-basis: 70%;
+  padding: 0 rem(30px);
 
   @include sphinx-medium-size {
-    float: left;
-    margin-left: 3%;
-    width: $sphinx_article_width;
+    // float: left;
+    // margin-left: rem(30px);
+    // width: $sphinx_article_width;
   }
 
   @include sphinx-full-size {
-    width: 850px;
-    margin-left: rem(30px);
+    // width: 850px;
+    // margin-left: rem(30px);
+    flex-basis: rem(850px);
   }
 
   .pytorch-breadcrumbs-aside {
@@ -879,8 +900,9 @@ a:hover {
   }
 }
 
-.version {
-  padding-bottom: rem(16px);
+.toc {
+  padding: rem(30px);
+  overflow: auto;
 }
 
 .pytorch-call-to-action-links {

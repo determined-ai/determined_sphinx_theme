@@ -86,12 +86,14 @@ window.utilities = {
   },
 
   headersHeight: function() {
-    if (document.getElementById("pytorch-left-menu").classList.contains("make-fixed")) {
-      return document.getElementById("pytorch-page-level-bar").offsetHeight;
-    } else {
-      return document.getElementById("header-holder").offsetHeight +
-             document.getElementById("pytorch-page-level-bar").offsetHeight;
-    }
+    // TODO: may require fixing for responsive
+    // if (document.getElementById("pytorch-left-menu").classList.contains("make-fixed")) {
+    //   return document.getElementById("pytorch-page-level-bar").offsetHeight;
+    // } else {
+    //   return document.getElementById("header-holder").offsetHeight +
+    //          document.getElementById("pytorch-page-level-bar").offsetHeight;
+    // }
+    return document.getElementById("pytorch-page-level-bar").offsetHeight;
   },
 
   windowHeight: function() {
