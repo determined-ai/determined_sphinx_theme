@@ -1,9 +1,9 @@
-window.pytorchAnchors = {
+window.determinedAIAnchors = {
   bind: function() {
     // Replace Sphinx-generated anchors with anchorjs ones
     $(".headerlink").text("");
 
-    window.anchors.add(".pytorch-article .headerlink");
+    window.anchors.add(".determined-ai-article .headerlink");
 
     $(".anchorjs-link").each(function() {
       var $headerLink = $(this).closest(".headerlink");

@@ -81,7 +81,7 @@
   {%- block extrahead %} {% endblock %}
 
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
-  <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
+  <!-- <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script> -->
 
   {% include "fonts.html" %}
 </head>
@@ -104,11 +104,11 @@
             <a href="{{ theme_variables.external_urls['blog'] }}">Blog</a>
           </li>
 
-          <li {%- if theme_pytorch_project == 'tutorials' %} class="active" {% endif %}>
+          <li {%- if theme_determined_ai_project == 'tutorials' %} class="active" {% endif %}>
             <a href="{{ theme_variables.external_urls['tutorials'] }}">Tutorials</a>
           </li>
 
-          <li {%- if theme_pytorch_project == 'docs' %} class="active" {% endif %}>
+          <li {%- if theme_determined_ai_project == 'docs' %} class="active" {% endif %}>
             <a href="{{ theme_variables.external_urls['docs'] }}">Docs</a>
           </li>
 
@@ -144,7 +144,7 @@
 -->
 
 
-<body class="pytorch-body">
+<body class="determined-ai-body">
 
   {% block extrabody %} {% endblock %}
 
@@ -162,10 +162,11 @@
 
   <div class="main">
 
-    <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
-      <!-- <div class="pytorch-side-scroll"> -->
-      <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <div class="pytorch-left-menu-search">
+    <nav data-toggle="wy-nav-shift" class="determined-ai-left-menu" id="determined-ai-left-menu">
+      <!-- <div class="determined-ai-side-scroll"> -->
+      <div class="determined-ai-menu determined-ai-menu-vertical" data-spy="affix" role="navigation"
+        aria-label="main navigation">
+        <div class="determined-ai-left-menu-search">
           <div class="logo">
             <img src="{{ pathto('_static/images/logo-determined-ai.svg', 1) }}" class="logo-dai" />
           </div>
@@ -211,37 +212,38 @@
       <!-- </div> -->
     </nav>
 
-    <div class="pytorch-container">
-      <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
-        <div class="pytorch-breadcrumbs-wrapper">
+    <div class="determined-ai-container">
+      <div class="determined-ai-page-level-bar" id="determined-ai-page-level-bar">
+        <div class="determined-ai-breadcrumbs-wrapper">
           {% include "breadcrumbs.html" %}
         </div>
 
-        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
+        <div class="determined-ai-shortcuts-wrapper" id="determined-ai-shortcuts-wrapper">
           Shortcuts
         </div>
       </div>
 
-      <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
-        <div class="pytorch-content-left">
+      <section data-toggle="wy-nav-shift" id="determined-ai-content-wrap" class="determined-ai-content-wrap">
+        <div class="determined-ai-content-left">
 
-          {% if theme_pytorch_project == 'tutorials' %}
+          {% if theme_determined_ai_project == 'tutorials' %}
 
-          <div class="pytorch-call-to-action-links">
+          <div class="determined-ai-call-to-action-links">
             <div id="tutorial-type">{{ pagename }}</div>
 
             <div id="google-colab-link">
-              <img class="call-to-action-img" src="{{ pathto('_static/images/pytorch-colab.svg', 1) }}" />
+              <img class="call-to-action-img" src="{{ pathto('_static/images/determined-ai-colab.svg', 1) }}" />
               <div class="call-to-action-desktop-view">Run in Google Colab</div>
               <div class="call-to-action-mobile-view">Colab</div>
             </div>
             <div id="download-notebook-link">
-              <img class="call-to-action-notebook-img" src="{{ pathto('_static/images/pytorch-download.svg', 1) }}" />
+              <img class="call-to-action-notebook-img"
+                src="{{ pathto('_static/images/determined-ai-download.svg', 1) }}" />
               <div class="call-to-action-desktop-view">Download Notebook</div>
               <div class="call-to-action-mobile-view">Notebook</div>
             </div>
             <div id="github-view-link">
-              <img class="call-to-action-img" src="{{ pathto('_static/images/pytorch-github.svg', 1) }}" />
+              <img class="call-to-action-img" src="{{ pathto('_static/images/determined-ai-github.svg', 1) }}" />
               <div class="call-to-action-desktop-view">View on GitHub</div>
               <div class="call-to-action-mobile-view">GitHub</div>
             </div>
@@ -257,7 +259,7 @@
               {% endif %}
               <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
                 {%- block document %}
-                <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
+                <article itemprop="articleBody" id="determined-ai-article" class="determined-ai-article">
                   {% block body %}{% endblock %}
                 </article>
                 {% if self.comments()|trim %}
@@ -272,9 +274,9 @@
             {%- endblock %}
           </div>
 
-          <div class="pytorch-content-right" id="pytorch-content-right">
-            <div class="pytorch-right-menu" id="pytorch-right-menu">
-              <!-- <div class="pytorch-side-scroll" id="pytorch-side-scroll-right"> -->
+          <div class="determined-ai-content-right" id="determined-ai-content-right">
+            <div class="determined-ai-right-menu" id="determined-ai-right-menu">
+              <!-- <div class="determined-ai-side-scroll" id="determined-ai-side-scroll-right"> -->
               {{ toc }}
               <!-- </div> -->
             </div>
@@ -462,11 +464,11 @@
             <a href="{{ theme_variables.external_urls['blog'] }}">Blog</a>
           </li>
 
-          <li {%- if theme_pytorch_project == 'tutorials' %} class="active" {%- endif %}>
+          <li {%- if theme_determined_ai_project == 'tutorials' %} class="active" {%- endif %}>
             <a href="{{ theme_variables.external_urls['tutorials'] }}">Tutorials</a>
           </li>
 
-          <li {%- if theme_pytorch_project == 'docs' %} class="active" {%- endif %}>
+          <li {%- if theme_determined_ai_project == 'docs' %} class="active" {%- endif %}>
             <a href="{{ theme_variables.external_urls['docs'] }}">Docs</a>
           </li>
 
@@ -490,14 +492,14 @@
     $(document).ready(function () {
       mobileMenu.bind();
       mobileTOC.bind();
-      pytorchAnchors.bind();
+      determinedAIAnchors.bind();
       sideMenus.bind();
       scrollToAnchor.bind();
       highlightNavigation.bind();
       mainMenuDropdown.bind();
 
       // Add class to links that have code blocks, since we cannot create links in code blocks
-      $("article.pytorch-article a span.pre").each(function (e) {
+      $("article.determined-ai-article a span.pre").each(function (e) {
         $(this).closest("a").addClass("has-code");
       });
     })

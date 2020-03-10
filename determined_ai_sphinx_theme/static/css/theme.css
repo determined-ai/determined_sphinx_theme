@@ -9473,12 +9473,6 @@ a.text-dark:hover, a.text-dark:focus {
   src: url("../ObjektivMk3/objektiv-mk3-bold-italic.woff2?ada469") format("woff2"), url("../ObjektivMk3/objektiv-mk3-bold-italic.woff?ada469") format("woff");
 }
 @font-face {
-  font-family: 'Objektiv Mk3';
-  font-style: italic;
-  font-weight: bold;
-  src: url("../ObjektivMk3/objektiv-mk3-bold-italic.woff2?ada469") format("woff2"), url("../ObjektivMk3/objektiv-mk3-bold-italic.woff?ada469") format("woff");
-}
-@font-face {
   font-family: 'Determined AI';
   font-style: normal;
   font-weight: normal;
@@ -9613,7 +9607,7 @@ a.with-right-arrow, .btn.with-right-arrow {
   }
 }
 
-.pytorch-article #table-of-contents {
+.determined-ai-article #table-of-contents {
   display: none;
 }
 
@@ -9679,16 +9673,6 @@ pre {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.header-container:before, .header-container:after {
-  content: "";
-  display: table;
-}
-.header-container:after {
-  clear: both;
-}
-.header-container {
-  *zoom: 1;
 }
 @media screen and (min-width: 1100px) {
   .header-container {
@@ -9821,16 +9805,6 @@ pre {
   display: flex;
   height: 68px;
   position: relative;
-}
-.mobile-main-menu .container-fluid:before, .mobile-main-menu .container-fluid:after {
-  content: "";
-  display: table;
-}
-.mobile-main-menu .container-fluid:after {
-  clear: both;
-}
-.mobile-main-menu .container-fluid {
-  *zoom: 1;
 }
 
 .mobile-main-menu.open ul {
@@ -10075,113 +10049,113 @@ pre {
   margin-top: -2px;
 }
 
-article.pytorch-article {
+article.determined-ai-article {
   max-width: 920px;
   margin: 0 auto;
 }
-article.pytorch-article h2,
-article.pytorch-article h3,
-article.pytorch-article h4,
-article.pytorch-article h5,
-article.pytorch-article h6 {
+article.determined-ai-article h2,
+article.determined-ai-article h3,
+article.determined-ai-article h4,
+article.determined-ai-article h5,
+article.determined-ai-article h6 {
   margin: 1.375rem 0;
   color: #262626;
 }
-article.pytorch-article h2 {
+article.determined-ai-article h2 {
   font-size: 1.625rem;
   letter-spacing: 1.33px;
   line-height: 2rem;
   text-transform: none;
 }
-article.pytorch-article h3 {
+article.determined-ai-article h3 {
   font-size: 1.5rem;
   letter-spacing: -0.25px;
   line-height: 1.875rem;
   text-transform: none;
 }
-article.pytorch-article h4,
-article.pytorch-article h5,
-article.pytorch-article h6 {
+article.determined-ai-article h4,
+article.determined-ai-article h5,
+article.determined-ai-article h6 {
   font-size: 1.125rem;
   letter-spacing: -0.19px;
   line-height: 1.875rem;
 }
-article.pytorch-article p {
+article.determined-ai-article p {
   margin-bottom: 1.125rem;
 }
-article.pytorch-article p,
-article.pytorch-article ul li,
-article.pytorch-article ol li,
-article.pytorch-article dl dt,
-article.pytorch-article dl dd,
-article.pytorch-article blockquote {
+article.determined-ai-article p,
+article.determined-ai-article ul li,
+article.determined-ai-article ol li,
+article.determined-ai-article dl dt,
+article.determined-ai-article dl dd,
+article.determined-ai-article blockquote {
   font-size: 1rem;
   line-height: 1.75rem;
   color: #262626;
   letter-spacing: 0.01px;
   font-weight: 500;
 }
-article.pytorch-article table {
+article.determined-ai-article table {
   margin-bottom: 2.5rem;
   width: 100%;
 }
-article.pytorch-article table thead {
+article.determined-ai-article table thead {
   border-bottom: 1px solid #cacaca;
 }
-article.pytorch-article table th {
+article.determined-ai-article table th {
   padding: 0.625rem;
   color: #262626;
 }
-article.pytorch-article table td {
+article.determined-ai-article table td {
   padding: 0.3125rem;
 }
-article.pytorch-article table tr th:first-of-type,
-article.pytorch-article table tr td:first-of-type {
+article.determined-ai-article table tr th:first-of-type,
+article.determined-ai-article table tr td:first-of-type {
   padding-left: 0;
 }
-article.pytorch-article table.docutils.field-list th.field-name {
+article.determined-ai-article table.docutils.field-list th.field-name {
   padding: 0.3125rem;
   padding-left: 0;
 }
-article.pytorch-article table.docutils.field-list td.field-body {
+article.determined-ai-article table.docutils.field-list td.field-body {
   padding: 0.3125rem;
 }
-article.pytorch-article table.docutils.field-list td.field-body p:last-of-type {
+article.determined-ai-article table.docutils.field-list td.field-body p:last-of-type {
   margin-bottom: 0;
 }
-article.pytorch-article ul,
-article.pytorch-article ol {
+article.determined-ai-article ul,
+article.determined-ai-article ol {
   margin: 1.5rem 0 3.125rem 0;
 }
 @media screen and (min-width: 768px) {
-  article.pytorch-article ul,
-  article.pytorch-article ol {
+  article.determined-ai-article ul,
+  article.determined-ai-article ol {
     padding-left: 6.25rem;
   }
 }
-article.pytorch-article ul li,
-article.pytorch-article ol li {
+article.determined-ai-article ul li,
+article.determined-ai-article ol li {
   margin-bottom: 0.625rem;
 }
-article.pytorch-article dl {
+article.determined-ai-article dl {
   margin-bottom: 1.5rem;
 }
-article.pytorch-article dl dt {
+article.determined-ai-article dl dt {
   margin-bottom: 0.75rem;
 }
-article.pytorch-article pre {
+article.determined-ai-article pre {
   margin-bottom: 2.5rem;
 }
-article.pytorch-article hr {
+article.determined-ai-article hr {
   margin-top: 4.6875rem;
   margin-bottom: 4.6875rem;
 }
-article.pytorch-article blockquote {
+article.determined-ai-article blockquote {
   margin: 0 auto;
   margin-bottom: 2.5rem;
   width: 65%;
 }
-article.pytorch-article img {
+article.determined-ai-article img {
   width: 100%;
 }
 
@@ -10246,15 +10220,15 @@ p a:hover {
   color: #f77b21;
 }
 
-ul.pytorch-breadcrumbs {
+ul.determined-ai-breadcrumbs {
   padding-left: 0;
   list-style-type: none;
 }
-ul.pytorch-breadcrumbs li {
+ul.determined-ai-breadcrumbs li {
   display: inline-block;
   font-size: 0.875rem;
 }
-ul.pytorch-breadcrumbs a {
+ul.determined-ai-breadcrumbs a {
   color: #f77b21;
   text-decoration: none;
 }
@@ -10378,52 +10352,52 @@ a:visited.has-code span {
   color: #4974d1;
 }
 
-article.pytorch-article ul,
-article.pytorch-article ol {
+article.determined-ai-article ul,
+article.determined-ai-article ol {
   padding-left: 1.875rem;
   margin: 0;
 }
-article.pytorch-article ul li,
-article.pytorch-article ol li {
+article.determined-ai-article ul li,
+article.determined-ai-article ol li {
   margin: 0;
   line-height: 1.75rem;
 }
-article.pytorch-article ul p,
-article.pytorch-article ol p {
+article.determined-ai-article ul p,
+article.determined-ai-article ol p {
   line-height: 1.75rem;
   margin-bottom: 0;
 }
-article.pytorch-article ul ul,
-article.pytorch-article ul ol,
-article.pytorch-article ol ul,
-article.pytorch-article ol ol {
+article.determined-ai-article ul ul,
+article.determined-ai-article ul ol,
+article.determined-ai-article ol ul,
+article.determined-ai-article ol ol {
   margin: 0;
 }
-article.pytorch-article h1,
-article.pytorch-article h2,
-article.pytorch-article h3,
-article.pytorch-article h4,
-article.pytorch-article h5,
-article.pytorch-article h6 {
+article.determined-ai-article h1,
+article.determined-ai-article h2,
+article.determined-ai-article h3,
+article.determined-ai-article h4,
+article.determined-ai-article h5,
+article.determined-ai-article h6 {
   font-weight: normal;
 }
-article.pytorch-article h1 a,
-article.pytorch-article h2 a,
-article.pytorch-article h3 a,
-article.pytorch-article h4 a,
-article.pytorch-article h5 a,
-article.pytorch-article h6 a {
+article.determined-ai-article h1 a,
+article.determined-ai-article h2 a,
+article.determined-ai-article h3 a,
+article.determined-ai-article h4 a,
+article.determined-ai-article h5 a,
+article.determined-ai-article h6 a {
   color: #262626;
 }
-article.pytorch-article p.caption {
+article.determined-ai-article p.caption {
   margin-top: 1.25rem;
 }
 
-article.pytorch-article .section:first-of-type h1:first-of-type {
+article.determined-ai-article .section:first-of-type h1:first-of-type {
   margin-top: 0;
 }
 
-article.pytorch-article .sphx-glr-thumbcontainer {
+article.determined-ai-article .sphx-glr-thumbcontainer {
   margin: 0;
   border: 1px solid #d6d7d8;
   border-radius: 0;
@@ -10432,44 +10406,44 @@ article.pytorch-article .sphx-glr-thumbcontainer {
   margin-bottom: 5%;
 }
 @media screen and (max-width: 1100px) {
-  article.pytorch-article .sphx-glr-thumbcontainer:nth-child(odd) {
+  article.determined-ai-article .sphx-glr-thumbcontainer:nth-child(odd) {
     margin-left: 0;
     margin-right: 2.5%;
   }
-  article.pytorch-article .sphx-glr-thumbcontainer:nth-child(even) {
+  article.determined-ai-article .sphx-glr-thumbcontainer:nth-child(even) {
     margin-right: 0;
     margin-left: 2.5%;
   }
-  article.pytorch-article .sphx-glr-thumbcontainer .figure {
+  article.determined-ai-article .sphx-glr-thumbcontainer .figure {
     width: 40%;
   }
 }
 @media screen and (min-width: 1101px) {
-  article.pytorch-article .sphx-glr-thumbcontainer {
+  article.determined-ai-article .sphx-glr-thumbcontainer {
     margin-right: 3%;
     margin-bottom: 3%;
     width: 30%;
   }
 }
-article.pytorch-article .sphx-glr-thumbcontainer .caption-text a {
+article.determined-ai-article .sphx-glr-thumbcontainer .caption-text a {
   font-size: 1rem;
   color: #262626;
   letter-spacing: 0;
   line-height: 1.5rem;
   text-decoration: none;
 }
-article.pytorch-article .sphx-glr-thumbcontainer:hover {
+article.determined-ai-article .sphx-glr-thumbcontainer:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-bottom-color: #ffffff;
 }
-article.pytorch-article .sphx-glr-thumbcontainer:hover .figure:before {
+article.determined-ai-article .sphx-glr-thumbcontainer:hover .figure:before {
   bottom: 100%;
 }
-article.pytorch-article .sphx-glr-thumbcontainer .figure {
+article.determined-ai-article .sphx-glr-thumbcontainer .figure {
   width: 80%;
 }
-article.pytorch-article .sphx-glr-thumbcontainer .figure:before {
+article.determined-ai-article .sphx-glr-thumbcontainer .figure:before {
   content: "";
   display: block;
   position: absolute;
@@ -10480,11 +10454,11 @@ article.pytorch-article .sphx-glr-thumbcontainer .figure:before {
   background: #8A94B3;
   opacity: 0.10;
 }
-article.pytorch-article .sphx-glr-thumbcontainer .figure a.reference.internal {
+article.determined-ai-article .sphx-glr-thumbcontainer .figure a.reference.internal {
   text-align: left;
 }
 @media screen and (min-width: 768px) {
-  article.pytorch-article .sphx-glr-thumbcontainer:after {
+  article.determined-ai-article .sphx-glr-thumbcontainer:after {
     content: "";
     display: block;
     width: 0;
@@ -10496,17 +10470,17 @@ article.pytorch-article .sphx-glr-thumbcontainer .figure a.reference.internal {
     -webkit-transition: width .250s ease-in-out;
     transition: width .250s ease-in-out;
   }
-  article.pytorch-article .sphx-glr-thumbcontainer:hover:after {
+  article.determined-ai-article .sphx-glr-thumbcontainer:hover:after {
     width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
-  article.pytorch-article .sphx-glr-thumbcontainer:after {
+  article.determined-ai-article .sphx-glr-thumbcontainer:after {
     background-color: #f77b21;
   }
 }
 
-article.pytorch-article .section :not(dt) > code {
+article.determined-ai-article .section :not(dt) > code {
   color: #262626;
   border-top: solid 2px #f3f4f7;
   background-color: #f3f4f7;
@@ -10515,11 +10489,11 @@ article.pytorch-article .section :not(dt) > code {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
-article.pytorch-article .section :not(dt) > code .pre {
+article.determined-ai-article .section :not(dt) > code .pre {
   outline: 0px;
   padding: 0px;
 }
-article.pytorch-article .function dt, article.pytorch-article .attribute dt, article.pytorch-article .class .attribute dt, article.pytorch-article .class dt {
+article.determined-ai-article .function dt, article.determined-ai-article .attribute dt, article.determined-ai-article .class .attribute dt, article.determined-ai-article .class dt {
   position: relative;
   background: #f3f4f7;
   padding: 0.5rem;
@@ -10527,14 +10501,14 @@ article.pytorch-article .function dt, article.pytorch-article .attribute dt, art
   word-wrap: break-word;
   padding-right: 100px;
 }
-article.pytorch-article .function dt em.property, article.pytorch-article .attribute dt em.property, article.pytorch-article .class dt em.property {
+article.determined-ai-article .function dt em.property, article.determined-ai-article .attribute dt em.property, article.determined-ai-article .class dt em.property {
   font-family: inherit;
 }
-article.pytorch-article .function dt em, article.pytorch-article .attribute dt em, article.pytorch-article .class .attribute dt em, article.pytorch-article .class dt em, article.pytorch-article .function dt .sig-paren, article.pytorch-article .attribute dt .sig-paren, article.pytorch-article .class dt .sig-paren {
+article.determined-ai-article .function dt em, article.determined-ai-article .attribute dt em, article.determined-ai-article .class .attribute dt em, article.determined-ai-article .class dt em, article.determined-ai-article .function dt .sig-paren, article.determined-ai-article .attribute dt .sig-paren, article.determined-ai-article .class dt .sig-paren {
   font-family: IBMPlexMono,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
   font-size: 87.5%;
 }
-article.pytorch-article .function dt a, article.pytorch-article .attribute dt a, article.pytorch-article .class .attribute dt a, article.pytorch-article .class dt a {
+article.determined-ai-article .function dt a, article.determined-ai-article .attribute dt a, article.determined-ai-article .class .attribute dt a, article.determined-ai-article .class dt a {
   position: absolute;
   right: 30px;
   padding-right: 0;
@@ -10542,17 +10516,17 @@ article.pytorch-article .function dt a, article.pytorch-article .attribute dt a,
   -webkit-transform: perspective(1px) translateY(-50%);
           transform: perspective(1px) translateY(-50%);
 }
-article.pytorch-article .function dt:hover .viewcode-link, article.pytorch-article .attribute dt:hover .viewcode-link, article.pytorch-article .class dt:hover .viewcode-link {
+article.determined-ai-article .function dt:hover .viewcode-link, article.determined-ai-article .attribute dt:hover .viewcode-link, article.determined-ai-article .class dt:hover .viewcode-link {
   color: #f77b21;
 }
-article.pytorch-article .function .anchorjs-link, article.pytorch-article .attribute .anchorjs-link, article.pytorch-article .class .anchorjs-link {
+article.determined-ai-article .function .anchorjs-link, article.determined-ai-article .attribute .anchorjs-link, article.determined-ai-article .class .anchorjs-link {
   display: inline;
   position: absolute;
   right: 8px;
   font-size: 1.5625rem !important;
   padding-left: 0;
 }
-article.pytorch-article .function dt > code, article.pytorch-article .attribute dt > code, article.pytorch-article .class .attribute dt > code, article.pytorch-article .class dt > code {
+article.determined-ai-article .function dt > code, article.determined-ai-article .attribute dt > code, article.determined-ai-article .class .attribute dt > code, article.determined-ai-article .class dt > code {
   color: #262626;
   border-top: solid 2px #f3f4f7;
   background-color: #f3f4f7;
@@ -10560,73 +10534,73 @@ article.pytorch-article .function dt > code, article.pytorch-article .attribute 
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
-article.pytorch-article .function .viewcode-link, article.pytorch-article .attribute .viewcode-link, article.pytorch-article .class .viewcode-link {
+article.determined-ai-article .function .viewcode-link, article.determined-ai-article .attribute .viewcode-link, article.determined-ai-article .class .viewcode-link {
   font-size: 0.875rem;
   color: #979797;
   letter-spacing: 0;
   line-height: 1.5rem;
   text-transform: uppercase;
 }
-article.pytorch-article .function dd, article.pytorch-article .attribute dd, article.pytorch-article .class .attribute dd, article.pytorch-article .class dd {
+article.determined-ai-article .function dd, article.determined-ai-article .attribute dd, article.determined-ai-article .class .attribute dd, article.determined-ai-article .class dd {
   padding-left: 3.75rem;
 }
-article.pytorch-article .function dd p, article.pytorch-article .attribute dd p, article.pytorch-article .class .attribute dd p, article.pytorch-article .class dd p {
+article.determined-ai-article .function dd p, article.determined-ai-article .attribute dd p, article.determined-ai-article .class .attribute dd p, article.determined-ai-article .class dd p {
   color: #262626;
 }
-article.pytorch-article .function table tbody tr th.field-name, article.pytorch-article .attribute table tbody tr th.field-name, article.pytorch-article .class table tbody tr th.field-name {
+article.determined-ai-article .function table tbody tr th.field-name, article.determined-ai-article .attribute table tbody tr th.field-name, article.determined-ai-article .class table tbody tr th.field-name {
   white-space: nowrap;
   color: #262626;
   width: 20%;
 }
 @media screen and (min-width: 768px) {
-  article.pytorch-article .function table tbody tr th.field-name, article.pytorch-article .attribute table tbody tr th.field-name, article.pytorch-article .class table tbody tr th.field-name {
+  article.determined-ai-article .function table tbody tr th.field-name, article.determined-ai-article .attribute table tbody tr th.field-name, article.determined-ai-article .class table tbody tr th.field-name {
     width: 15%;
   }
 }
-article.pytorch-article .function table tbody tr td.field-body, article.pytorch-article .attribute table tbody tr td.field-body, article.pytorch-article .class table tbody tr td.field-body {
+article.determined-ai-article .function table tbody tr td.field-body, article.determined-ai-article .attribute table tbody tr td.field-body, article.determined-ai-article .class table tbody tr td.field-body {
   padding: 0.625rem;
   width: 80%;
   color: #262626;
 }
 @media screen and (min-width: 768px) {
-  article.pytorch-article .function table tbody tr td.field-body, article.pytorch-article .attribute table tbody tr td.field-body, article.pytorch-article .class table tbody tr td.field-body {
+  article.determined-ai-article .function table tbody tr td.field-body, article.determined-ai-article .attribute table tbody tr td.field-body, article.determined-ai-article .class table tbody tr td.field-body {
     width: 85%;
   }
 }
 @media screen and (min-width: 1600px) {
-  article.pytorch-article .function table tbody tr td.field-body, article.pytorch-article .attribute table tbody tr td.field-body, article.pytorch-article .class table tbody tr td.field-body {
+  article.determined-ai-article .function table tbody tr td.field-body, article.determined-ai-article .attribute table tbody tr td.field-body, article.determined-ai-article .class table tbody tr td.field-body {
     padding-left: 1.25rem;
   }
 }
-article.pytorch-article .function table tbody tr td.field-body p, article.pytorch-article .attribute table tbody tr td.field-body p, article.pytorch-article .class table tbody tr td.field-body p {
+article.determined-ai-article .function table tbody tr td.field-body p, article.determined-ai-article .attribute table tbody tr td.field-body p, article.determined-ai-article .class table tbody tr td.field-body p {
   padding-left: 0px;
 }
-article.pytorch-article .function table tbody tr td.field-body p:last-of-type, article.pytorch-article .attribute table tbody tr td.field-body p:last-of-type, article.pytorch-article .class table tbody tr td.field-body p:last-of-type {
+article.determined-ai-article .function table tbody tr td.field-body p:last-of-type, article.determined-ai-article .attribute table tbody tr td.field-body p:last-of-type, article.determined-ai-article .class table tbody tr td.field-body p:last-of-type {
   margin-bottom: 0;
 }
-article.pytorch-article .function table tbody tr td.field-body ol, article.pytorch-article .attribute table tbody tr td.field-body ol, article.pytorch-article .class table tbody tr td.field-body ol, article.pytorch-article .function table tbody tr td.field-body ul, article.pytorch-article .attribute table tbody tr td.field-body ul, article.pytorch-article .class table tbody tr td.field-body ul {
+article.determined-ai-article .function table tbody tr td.field-body ol, article.determined-ai-article .attribute table tbody tr td.field-body ol, article.determined-ai-article .class table tbody tr td.field-body ol, article.determined-ai-article .function table tbody tr td.field-body ul, article.determined-ai-article .attribute table tbody tr td.field-body ul, article.determined-ai-article .class table tbody tr td.field-body ul {
   padding-left: 1rem;
   padding-bottom: 0;
 }
-article.pytorch-article .function table.docutils.field-list, article.pytorch-article .attribute table.docutils.field-list, article.pytorch-article .class table.docutils.field-list {
+article.determined-ai-article .function table.docutils.field-list, article.determined-ai-article .attribute table.docutils.field-list, article.determined-ai-article .class table.docutils.field-list {
   margin-bottom: 0.75rem;
 }
-article.pytorch-article .attribute .has-code {
+article.determined-ai-article .attribute .has-code {
   float: none;
 }
-article.pytorch-article .class dt {
+article.determined-ai-article .class dt {
   border-left: none;
   border-top: 3px solid #f77b21;
   padding-left: 4em;
 }
-article.pytorch-article .class dt em.property {
+article.determined-ai-article .class dt em.property {
   position: absolute;
   left: 0.5rem;
 }
-article.pytorch-article .class dd .docutils dt {
+article.determined-ai-article .class dd .docutils dt {
   padding-left: 0.5rem;
 }
-article.pytorch-article .class em.property {
+article.determined-ai-article .class em.property {
   text-transform: uppercase;
   font-style: normal;
   color: #f77b21;
@@ -10634,53 +10608,53 @@ article.pytorch-article .class em.property {
   letter-spacing: 0;
   padding-right: 0.75rem;
 }
-article.pytorch-article .class dl dt em.property {
+article.determined-ai-article .class dl dt em.property {
   position: static;
   left: 0;
   padding-right: 0;
 }
-article.pytorch-article .class .method dt,
-article.pytorch-article .class .staticmethod dt {
+article.determined-ai-article .class .method dt,
+article.determined-ai-article .class .staticmethod dt {
   border-left: 3px solid #f77b21;
   border-top: none;
 }
-article.pytorch-article .class .method dt,
-article.pytorch-article .class .staticmethod dt {
+article.determined-ai-article .class .method dt,
+article.determined-ai-article .class .staticmethod dt {
   padding-left: 0.5rem;
 }
-article.pytorch-article .class .attribute dt {
+article.determined-ai-article .class .attribute dt {
   border-top: none;
 }
-article.pytorch-article .class .attribute dt em.property {
+article.determined-ai-article .class .attribute dt em.property {
   position: relative;
   left: 0;
 }
-article.pytorch-article table {
+article.determined-ai-article table {
   table-layout: fixed;
 }
 
-article.pytorch-article .note,
-article.pytorch-article .warning,
-article.pytorch-article .tip,
-article.pytorch-article .hint,
-article.pytorch-article .important,
-article.pytorch-article .caution,
-article.pytorch-article .danger,
-article.pytorch-article .attention,
-article.pytorch-article .error {
+article.determined-ai-article .note,
+article.determined-ai-article .warning,
+article.determined-ai-article .tip,
+article.determined-ai-article .hint,
+article.determined-ai-article .important,
+article.determined-ai-article .caution,
+article.determined-ai-article .danger,
+article.determined-ai-article .attention,
+article.determined-ai-article .error {
   background: #f3f4f7;
   margin-top: 1.875rem;
   margin-bottom: 1.125rem;
 }
-article.pytorch-article .note .admonition-title,
-article.pytorch-article .warning .admonition-title,
-article.pytorch-article .tip .admonition-title,
-article.pytorch-article .hint .admonition-title,
-article.pytorch-article .important .admonition-title,
-article.pytorch-article .caution .admonition-title,
-article.pytorch-article .danger .admonition-title,
-article.pytorch-article .attention .admonition-title,
-article.pytorch-article .error .admonition-title {
+article.determined-ai-article .note .admonition-title,
+article.determined-ai-article .warning .admonition-title,
+article.determined-ai-article .tip .admonition-title,
+article.determined-ai-article .hint .admonition-title,
+article.determined-ai-article .important .admonition-title,
+article.determined-ai-article .caution .admonition-title,
+article.determined-ai-article .danger .admonition-title,
+article.determined-ai-article .attention .admonition-title,
+article.determined-ai-article .error .admonition-title {
   color: #ffffff;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -10689,74 +10663,74 @@ article.pytorch-article .error .admonition-title {
   position: relative;
   font-size: 0.875rem;
 }
-article.pytorch-article .note .admonition-title:before,
-article.pytorch-article .warning .admonition-title:before,
-article.pytorch-article .tip .admonition-title:before,
-article.pytorch-article .hint .admonition-title:before,
-article.pytorch-article .important .admonition-title:before,
-article.pytorch-article .caution .admonition-title:before,
-article.pytorch-article .danger .admonition-title:before,
-article.pytorch-article .attention .admonition-title:before,
-article.pytorch-article .error .admonition-title:before {
+article.determined-ai-article .note .admonition-title:before,
+article.determined-ai-article .warning .admonition-title:before,
+article.determined-ai-article .tip .admonition-title:before,
+article.determined-ai-article .hint .admonition-title:before,
+article.determined-ai-article .important .admonition-title:before,
+article.determined-ai-article .caution .admonition-title:before,
+article.determined-ai-article .danger .admonition-title:before,
+article.determined-ai-article .attention .admonition-title:before,
+article.determined-ai-article .error .admonition-title:before {
   content: "\2022";
   position: absolute;
   left: 9px;
   color: #ffffff;
   top: 2px;
 }
-article.pytorch-article .note p:nth-child(n + 2),
-article.pytorch-article .warning p:nth-child(n + 2),
-article.pytorch-article .tip p:nth-child(n + 2),
-article.pytorch-article .hint p:nth-child(n + 2),
-article.pytorch-article .important p:nth-child(n + 2),
-article.pytorch-article .caution p:nth-child(n + 2),
-article.pytorch-article .danger p:nth-child(n + 2),
-article.pytorch-article .attention p:nth-child(n + 2),
-article.pytorch-article .error p:nth-child(n + 2) {
+article.determined-ai-article .note p:nth-child(n + 2),
+article.determined-ai-article .warning p:nth-child(n + 2),
+article.determined-ai-article .tip p:nth-child(n + 2),
+article.determined-ai-article .hint p:nth-child(n + 2),
+article.determined-ai-article .important p:nth-child(n + 2),
+article.determined-ai-article .caution p:nth-child(n + 2),
+article.determined-ai-article .danger p:nth-child(n + 2),
+article.determined-ai-article .attention p:nth-child(n + 2),
+article.determined-ai-article .error p:nth-child(n + 2) {
   padding: 0 1.375rem;
 }
-article.pytorch-article .note table,
-article.pytorch-article .warning table,
-article.pytorch-article .tip table,
-article.pytorch-article .hint table,
-article.pytorch-article .important table,
-article.pytorch-article .caution table,
-article.pytorch-article .danger table,
-article.pytorch-article .attention table,
-article.pytorch-article .error table {
+article.determined-ai-article .note table,
+article.determined-ai-article .warning table,
+article.determined-ai-article .tip table,
+article.determined-ai-article .hint table,
+article.determined-ai-article .important table,
+article.determined-ai-article .caution table,
+article.determined-ai-article .danger table,
+article.determined-ai-article .attention table,
+article.determined-ai-article .error table {
   margin: 0 2rem;
   width: auto;
 }
-article.pytorch-article .note .pre,
-article.pytorch-article .note pre,
-article.pytorch-article .warning .pre,
-article.pytorch-article .warning pre,
-article.pytorch-article .tip .pre,
-article.pytorch-article .tip pre,
-article.pytorch-article .hint .pre,
-article.pytorch-article .hint pre,
-article.pytorch-article .important .pre,
-article.pytorch-article .important pre,
-article.pytorch-article .caution .pre,
-article.pytorch-article .caution pre,
-article.pytorch-article .danger .pre,
-article.pytorch-article .danger pre,
-article.pytorch-article .attention .pre,
-article.pytorch-article .attention pre,
-article.pytorch-article .error .pre,
-article.pytorch-article .error pre {
+article.determined-ai-article .note .pre,
+article.determined-ai-article .note pre,
+article.determined-ai-article .warning .pre,
+article.determined-ai-article .warning pre,
+article.determined-ai-article .tip .pre,
+article.determined-ai-article .tip pre,
+article.determined-ai-article .hint .pre,
+article.determined-ai-article .hint pre,
+article.determined-ai-article .important .pre,
+article.determined-ai-article .important pre,
+article.determined-ai-article .caution .pre,
+article.determined-ai-article .caution pre,
+article.determined-ai-article .danger .pre,
+article.determined-ai-article .danger pre,
+article.determined-ai-article .attention .pre,
+article.determined-ai-article .attention pre,
+article.determined-ai-article .error .pre,
+article.determined-ai-article .error pre {
   background: #ffffff;
   outline: 1px solid #e9e9e9;
 }
-article.pytorch-article .note :not(dt) > code,
-article.pytorch-article .warning :not(dt) > code,
-article.pytorch-article .tip :not(dt) > code,
-article.pytorch-article .hint :not(dt) > code,
-article.pytorch-article .important :not(dt) > code,
-article.pytorch-article .caution :not(dt) > code,
-article.pytorch-article .danger :not(dt) > code,
-article.pytorch-article .attention :not(dt) > code,
-article.pytorch-article .error :not(dt) > code {
+article.determined-ai-article .note :not(dt) > code,
+article.determined-ai-article .warning :not(dt) > code,
+article.determined-ai-article .tip :not(dt) > code,
+article.determined-ai-article .hint :not(dt) > code,
+article.determined-ai-article .important :not(dt) > code,
+article.determined-ai-article .caution :not(dt) > code,
+article.determined-ai-article .danger :not(dt) > code,
+article.determined-ai-article .attention :not(dt) > code,
+article.determined-ai-article .error :not(dt) > code {
   border-top: solid 2px #ffffff;
   background-color: #ffffff;
   border-bottom: solid 2px #ffffff;
@@ -10765,128 +10739,128 @@ article.pytorch-article .error :not(dt) > code {
   box-decoration-break: clone;
   outline: 1px solid #e9e9e9;
 }
-article.pytorch-article .note :not(dt) > code .pre,
-article.pytorch-article .warning :not(dt) > code .pre,
-article.pytorch-article .tip :not(dt) > code .pre,
-article.pytorch-article .hint :not(dt) > code .pre,
-article.pytorch-article .important :not(dt) > code .pre,
-article.pytorch-article .caution :not(dt) > code .pre,
-article.pytorch-article .danger :not(dt) > code .pre,
-article.pytorch-article .attention :not(dt) > code .pre,
-article.pytorch-article .error :not(dt) > code .pre {
+article.determined-ai-article .note :not(dt) > code .pre,
+article.determined-ai-article .warning :not(dt) > code .pre,
+article.determined-ai-article .tip :not(dt) > code .pre,
+article.determined-ai-article .hint :not(dt) > code .pre,
+article.determined-ai-article .important :not(dt) > code .pre,
+article.determined-ai-article .caution :not(dt) > code .pre,
+article.determined-ai-article .danger :not(dt) > code .pre,
+article.determined-ai-article .attention :not(dt) > code .pre,
+article.determined-ai-article .error :not(dt) > code .pre {
   outline: 0px;
   padding: 0px;
 }
-article.pytorch-article .note pre,
-article.pytorch-article .warning pre,
-article.pytorch-article .tip pre,
-article.pytorch-article .hint pre,
-article.pytorch-article .important pre,
-article.pytorch-article .caution pre,
-article.pytorch-article .danger pre,
-article.pytorch-article .attention pre,
-article.pytorch-article .error pre {
+article.determined-ai-article .note pre,
+article.determined-ai-article .warning pre,
+article.determined-ai-article .tip pre,
+article.determined-ai-article .hint pre,
+article.determined-ai-article .important pre,
+article.determined-ai-article .caution pre,
+article.determined-ai-article .danger pre,
+article.determined-ai-article .attention pre,
+article.determined-ai-article .error pre {
   margin-bottom: 0;
 }
-article.pytorch-article .note .highlight,
-article.pytorch-article .warning .highlight,
-article.pytorch-article .tip .highlight,
-article.pytorch-article .hint .highlight,
-article.pytorch-article .important .highlight,
-article.pytorch-article .caution .highlight,
-article.pytorch-article .danger .highlight,
-article.pytorch-article .attention .highlight,
-article.pytorch-article .error .highlight {
+article.determined-ai-article .note .highlight,
+article.determined-ai-article .warning .highlight,
+article.determined-ai-article .tip .highlight,
+article.determined-ai-article .hint .highlight,
+article.determined-ai-article .important .highlight,
+article.determined-ai-article .caution .highlight,
+article.determined-ai-article .danger .highlight,
+article.determined-ai-article .attention .highlight,
+article.determined-ai-article .error .highlight {
   margin: 0 2rem 1.125rem 2rem;
 }
-article.pytorch-article .note ul,
-article.pytorch-article .note ol,
-article.pytorch-article .warning ul,
-article.pytorch-article .warning ol,
-article.pytorch-article .tip ul,
-article.pytorch-article .tip ol,
-article.pytorch-article .hint ul,
-article.pytorch-article .hint ol,
-article.pytorch-article .important ul,
-article.pytorch-article .important ol,
-article.pytorch-article .caution ul,
-article.pytorch-article .caution ol,
-article.pytorch-article .danger ul,
-article.pytorch-article .danger ol,
-article.pytorch-article .attention ul,
-article.pytorch-article .attention ol,
-article.pytorch-article .error ul,
-article.pytorch-article .error ol {
+article.determined-ai-article .note ul,
+article.determined-ai-article .note ol,
+article.determined-ai-article .warning ul,
+article.determined-ai-article .warning ol,
+article.determined-ai-article .tip ul,
+article.determined-ai-article .tip ol,
+article.determined-ai-article .hint ul,
+article.determined-ai-article .hint ol,
+article.determined-ai-article .important ul,
+article.determined-ai-article .important ol,
+article.determined-ai-article .caution ul,
+article.determined-ai-article .caution ol,
+article.determined-ai-article .danger ul,
+article.determined-ai-article .danger ol,
+article.determined-ai-article .attention ul,
+article.determined-ai-article .attention ol,
+article.determined-ai-article .error ul,
+article.determined-ai-article .error ol {
   padding-left: 3.25rem;
 }
-article.pytorch-article .note ul li,
-article.pytorch-article .note ol li,
-article.pytorch-article .warning ul li,
-article.pytorch-article .warning ol li,
-article.pytorch-article .tip ul li,
-article.pytorch-article .tip ol li,
-article.pytorch-article .hint ul li,
-article.pytorch-article .hint ol li,
-article.pytorch-article .important ul li,
-article.pytorch-article .important ol li,
-article.pytorch-article .caution ul li,
-article.pytorch-article .caution ol li,
-article.pytorch-article .danger ul li,
-article.pytorch-article .danger ol li,
-article.pytorch-article .attention ul li,
-article.pytorch-article .attention ol li,
-article.pytorch-article .error ul li,
-article.pytorch-article .error ol li {
+article.determined-ai-article .note ul li,
+article.determined-ai-article .note ol li,
+article.determined-ai-article .warning ul li,
+article.determined-ai-article .warning ol li,
+article.determined-ai-article .tip ul li,
+article.determined-ai-article .tip ol li,
+article.determined-ai-article .hint ul li,
+article.determined-ai-article .hint ol li,
+article.determined-ai-article .important ul li,
+article.determined-ai-article .important ol li,
+article.determined-ai-article .caution ul li,
+article.determined-ai-article .caution ol li,
+article.determined-ai-article .danger ul li,
+article.determined-ai-article .danger ol li,
+article.determined-ai-article .attention ul li,
+article.determined-ai-article .attention ol li,
+article.determined-ai-article .error ul li,
+article.determined-ai-article .error ol li {
   color: #262626;
 }
-article.pytorch-article .note p,
-article.pytorch-article .warning p,
-article.pytorch-article .tip p,
-article.pytorch-article .hint p,
-article.pytorch-article .important p,
-article.pytorch-article .caution p,
-article.pytorch-article .danger p,
-article.pytorch-article .attention p,
-article.pytorch-article .error p {
+article.determined-ai-article .note p,
+article.determined-ai-article .warning p,
+article.determined-ai-article .tip p,
+article.determined-ai-article .hint p,
+article.determined-ai-article .important p,
+article.determined-ai-article .caution p,
+article.determined-ai-article .danger p,
+article.determined-ai-article .attention p,
+article.determined-ai-article .error p {
   margin-top: 1.125rem;
 }
-article.pytorch-article .note .admonition-title {
+article.determined-ai-article .note .admonition-title {
   background: #54c7ec;
 }
-article.pytorch-article .warning .admonition-title {
+article.determined-ai-article .warning .admonition-title {
   background: #e94f3b;
 }
-article.pytorch-article .tip .admonition-title {
+article.determined-ai-article .tip .admonition-title {
   background: #6bcebb;
 }
-article.pytorch-article .hint .admonition-title {
+article.determined-ai-article .hint .admonition-title {
   background: #a2cdde;
 }
-article.pytorch-article .important .admonition-title {
+article.determined-ai-article .important .admonition-title {
   background: #5890ff;
 }
-article.pytorch-article .caution .admonition-title {
+article.determined-ai-article .caution .admonition-title {
   background: #f7923a;
 }
-article.pytorch-article .danger .admonition-title {
+article.determined-ai-article .danger .admonition-title {
   background: #db2c49;
 }
-article.pytorch-article .attention .admonition-title {
+article.determined-ai-article .attention .admonition-title {
   background: #f5a623;
 }
-article.pytorch-article .error .admonition-title {
+article.determined-ai-article .error .admonition-title {
   background: #cc2f90;
 }
-article.pytorch-article .sphx-glr-download-link-note.admonition.note,
-article.pytorch-article .reference.download.internal, article.pytorch-article .sphx-glr-signature {
+article.determined-ai-article .sphx-glr-download-link-note.admonition.note,
+article.determined-ai-article .reference.download.internal, article.determined-ai-article .sphx-glr-signature {
   display: none;
 }
-article.pytorch-article .admonition > p:last-of-type {
+article.determined-ai-article .admonition > p:last-of-type {
   margin-bottom: 0;
   padding-bottom: 1.125rem !important;
 }
 
-.pytorch-article div.sphx-glr-download a {
+.determined-ai-article div.sphx-glr-download a {
   background-color: #f3f4f7;
   background-image: url("../images/arrow-down-orange.svg");
   background-repeat: no-repeat;
@@ -10901,7 +10875,7 @@ article.pytorch-article .admonition > p:last-of-type {
   margin: 1.25rem auto;
 }
 @media screen and (min-width: 768px) {
-  .pytorch-article div.sphx-glr-download a:after {
+  .determined-ai-article div.sphx-glr-download a:after {
     content: "";
     display: block;
     width: 0;
@@ -10913,87 +10887,87 @@ article.pytorch-article .admonition > p:last-of-type {
     -webkit-transition: width .250s ease-in-out;
     transition: width .250s ease-in-out;
   }
-  .pytorch-article div.sphx-glr-download a:hover:after {
+  .determined-ai-article div.sphx-glr-download a:hover:after {
     width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
-  .pytorch-article div.sphx-glr-download a:after {
+  .determined-ai-article div.sphx-glr-download a:after {
     background-color: #f77b21;
   }
 }
 @media screen and (min-width: 768px) {
-  .pytorch-article div.sphx-glr-download a {
+  .determined-ai-article div.sphx-glr-download a {
     background-position: left 20px center;
   }
 }
-.pytorch-article div.sphx-glr-download a:hover {
+.determined-ai-article div.sphx-glr-download a:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
   text-decoration: none;
   background-image: url("../images/arrow-down-orange.svg");
   background-color: #f3f4f7;
 }
-.pytorch-article div.sphx-glr-download a span.pre {
+.determined-ai-article div.sphx-glr-download a span.pre {
   background-color: transparent;
   font-size: 1.125rem;
   padding: 0;
   color: #262626;
 }
-.pytorch-article div.sphx-glr-download a code, .pytorch-article div.sphx-glr-download a kbd, .pytorch-article div.sphx-glr-download a pre, .pytorch-article div.sphx-glr-download a samp, .pytorch-article div.sphx-glr-download a span.pre {
+.determined-ai-article div.sphx-glr-download a code, .determined-ai-article div.sphx-glr-download a kbd, .determined-ai-article div.sphx-glr-download a pre, .determined-ai-article div.sphx-glr-download a samp, .determined-ai-article div.sphx-glr-download a span.pre {
   font-family: 'Objektiv Mk3', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.pytorch-article p.sphx-glr-script-out {
+.determined-ai-article p.sphx-glr-script-out {
   margin-bottom: 1.125rem;
 }
 
-.pytorch-article div.sphx-glr-script-out {
+.determined-ai-article div.sphx-glr-script-out {
   margin-bottom: 2.5rem;
 }
-.pytorch-article div.sphx-glr-script-out .highlight {
+.determined-ai-article div.sphx-glr-script-out .highlight {
   margin-left: 0;
   margin-top: 0;
 }
-.pytorch-article div.sphx-glr-script-out .highlight pre {
+.determined-ai-article div.sphx-glr-script-out .highlight pre {
   background-color: #fdede9;
   padding: 1.5625rem;
   color: #837b79;
 }
-.pytorch-article div.sphx-glr-script-out + p {
+.determined-ai-article div.sphx-glr-script-out + p {
   margin-top: unset;
 }
 
-article.pytorch-article .wy-table-responsive table {
+article.determined-ai-article .wy-table-responsive table {
   border: none;
   border-color: #ffffff !important;
   table-layout: fixed;
 }
-article.pytorch-article .wy-table-responsive table thead tr {
+article.determined-ai-article .wy-table-responsive table thead tr {
   border-bottom: 2px solid #6c6c6d;
 }
-article.pytorch-article .wy-table-responsive table thead th {
+article.determined-ai-article .wy-table-responsive table thead th {
   line-height: 1.75rem;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }
-article.pytorch-article .wy-table-responsive table tbody .row-odd {
+article.determined-ai-article .wy-table-responsive table tbody .row-odd {
   background-color: #f3f4f7;
 }
-article.pytorch-article .wy-table-responsive table tbody td {
+article.determined-ai-article .wy-table-responsive table tbody td {
   color: #6c6c6d;
   white-space: normal;
   padding: 0.9375rem;
   font-size: 1rem;
   line-height: 1.375rem;
 }
-article.pytorch-article .wy-table-responsive table tbody td .pre {
+article.determined-ai-article .wy-table-responsive table tbody td .pre {
   background: #ffffff;
   outline: 1px solid #e9e9e9;
   color: #f77b21;
   font-size: 87.5%;
 }
-article.pytorch-article .wy-table-responsive table tbody td code {
+article.determined-ai-article .wy-table-responsive table tbody td code {
   font-size: 87.5%;
 }
 
@@ -11024,42 +10998,42 @@ img.previous-page {
           box-shadow: none;
 }
 
-article.pytorch-article blockquote {
+article.determined-ai-article blockquote {
   margin-left: 3.75rem;
   color: #6c6c6d;
 }
 
-article.pytorch-article .caption {
+article.determined-ai-article .caption {
   color: #6c6c6d;
   letter-spacing: 0.25px;
   line-height: 2.125rem;
 }
 
-article.pytorch-article .math {
+article.determined-ai-article .math {
   color: #262626;
   width: auto;
   text-align: center;
 }
-article.pytorch-article .math img {
+article.determined-ai-article .math img {
   width: auto;
 }
 
-.pytorch-breadcrumbs-wrapper {
+.determined-ai-breadcrumbs-wrapper {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
   padding: 0 1.875rem;
 }
 @media screen and (min-width: 1600px) {
-  .pytorch-breadcrumbs-wrapper {
+  .determined-ai-breadcrumbs-wrapper {
     -ms-flex-preferred-size: 53.125rem;
         flex-basis: 53.125rem;
   }
 }
-.pytorch-breadcrumbs-wrapper .pytorch-breadcrumbs-aside {
+.determined-ai-breadcrumbs-wrapper .determined-ai-breadcrumbs-aside {
   float: right;
 }
 
-.pytorch-article .container {
+.determined-ai-article .container {
   padding-left: 0;
   padding-right: 0;
   max-width: none;
@@ -11123,64 +11097,64 @@ a:hover {
   overflow: auto;
 }
 
-.pytorch-call-to-action-links {
+.determined-ai-call-to-action-links {
   padding-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (min-width: 768px) {
-  .pytorch-call-to-action-links {
+  .determined-ai-call-to-action-links {
     padding-top: 2.5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1239px) {
-  .pytorch-call-to-action-links {
+  .determined-ai-call-to-action-links {
     padding-top: 0;
   }
 }
 @media (min-width: 1100px) and (max-width: 1239px) {
-  .pytorch-call-to-action-links {
+  .determined-ai-call-to-action-links {
     padding-top: 2.5rem;
   }
 }
-.pytorch-call-to-action-links #tutorial-type {
+.determined-ai-call-to-action-links #tutorial-type {
   display: none;
 }
-.pytorch-call-to-action-links .call-to-action-img, .pytorch-call-to-action-links .call-to-action-notebook-img {
+.determined-ai-call-to-action-links .call-to-action-img, .determined-ai-call-to-action-links .call-to-action-notebook-img {
   height: 1.375rem;
   width: 1.375rem;
   margin-right: 10px;
 }
-.pytorch-call-to-action-links .call-to-action-notebook-img {
+.determined-ai-call-to-action-links .call-to-action-notebook-img {
   height: 1rem;
 }
-.pytorch-call-to-action-links a {
+.determined-ai-call-to-action-links a {
   padding-right: 1.25rem;
   color: #000000;
   cursor: pointer;
 }
-.pytorch-call-to-action-links a:hover {
+.determined-ai-call-to-action-links a:hover {
   color: #e44c2c;
 }
-.pytorch-call-to-action-links a .call-to-action-desktop-view {
+.determined-ai-call-to-action-links a .call-to-action-desktop-view {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .pytorch-call-to-action-links a .call-to-action-desktop-view {
+  .determined-ai-call-to-action-links a .call-to-action-desktop-view {
     display: block;
   }
 }
-.pytorch-call-to-action-links a .call-to-action-mobile-view {
+.determined-ai-call-to-action-links a .call-to-action-mobile-view {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .pytorch-call-to-action-links a .call-to-action-mobile-view {
+  .determined-ai-call-to-action-links a .call-to-action-mobile-view {
     display: none;
   }
 }
-.pytorch-call-to-action-links a #google-colab-link, .pytorch-call-to-action-links a #download-notebook-link,
-.pytorch-call-to-action-links a #github-view-link {
+.determined-ai-call-to-action-links a #google-colab-link, .determined-ai-call-to-action-links a #download-notebook-link,
+.determined-ai-call-to-action-links a #github-view-link {
   padding-bottom: 0.625rem;
   border-bottom: 1px solid #f3f4f7;
   padding-right: 2.5rem;
@@ -11191,8 +11165,8 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-.pytorch-call-to-action-links a #google-colab-link:hover, .pytorch-call-to-action-links a #download-notebook-link:hover,
-.pytorch-call-to-action-links a #github-view-link:hover {
+.determined-ai-call-to-action-links a #google-colab-link:hover, .determined-ai-call-to-action-links a #download-notebook-link:hover,
+.determined-ai-call-to-action-links a #github-view-link:hover {
   border-bottom-color: #e44c2c;
   color: #e44c2c;
 }
@@ -11219,7 +11193,7 @@ body {
   }
 }
 
-.pytorch-container {
+.determined-ai-container {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -11235,18 +11209,8 @@ body {
   width: auto;
   position: relative;
 }
-.pytorch-container:before, .pytorch-container:after {
-  content: "";
-  display: table;
-}
-.pytorch-container:after {
-  clear: both;
-}
-.pytorch-container {
-  *zoom: 1;
-}
 
-.pytorch-content-wrap {
+.determined-ai-content-wrap {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -11258,44 +11222,44 @@ body {
   background-color: #ffffff;
 }
 @media screen and (min-width: 1101px) {
-  .pytorch-content-wrap {
+  .determined-ai-content-wrap {
     /* d.ai */
   }
 }
 
-.pytorch-content {
+.determined-ai-content {
   background: #ffffff;
   width: 100%;
   max-width: 700px;
   position: relative;
 }
 
-.pytorch-content-left {
+.determined-ai-content-left {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   padding: 1.875rem;
   overflow: auto;
 }
 @media screen and (min-width: 1101px) {
-  .pytorch-content-left {
+  .determined-ai-content-left {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
   }
 }
 @media screen and (min-width: 1600px) {
-  .pytorch-content-left {
+  .determined-ai-content-left {
     -ms-flex-preferred-size: 53.125rem;
         flex-basis: 53.125rem;
   }
 }
-.pytorch-content-left .main-content ul.simple {
+.determined-ai-content-left .main-content ul.simple {
   padding-bottom: 1.25rem;
 }
-.pytorch-content-left .main-content .note:nth-child(1), .pytorch-content-left .main-content .warning:nth-child(1) {
+.determined-ai-content-left .main-content .note:nth-child(1), .determined-ai-content-left .main-content .warning:nth-child(1) {
   margin-top: 0;
 }
 
-.pytorch-content-right {
+.determined-ai-content-right {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -11304,7 +11268,7 @@ body {
   overflow: auto;
 }
 @media screen and (min-width: 1101px) {
-  .pytorch-content-right {
+  .determined-ai-content-right {
     /* d.ai */
     display: block;
     -ms-flex-preferred-size: 18.75rem;
@@ -11312,19 +11276,19 @@ body {
   }
 }
 @media screen and (min-width: 1600px) {
-  .pytorch-content-right {
+  .determined-ai-content-right {
     /* d.ai */
   }
 }
 
 @media screen and (min-width: 1101px) {
-  .pytorch-side-scroll {
+  .determined-ai-side-scroll {
     position: relative;
     height: 100%;
   }
 }
 
-.pytorch-menu-vertical {
+.determined-ai-menu-vertical {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11336,7 +11300,7 @@ body {
   height: 100%;
 }
 
-.pytorch-left-menu {
+.determined-ai-left-menu {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   display: none;
@@ -11349,7 +11313,7 @@ body {
   z-index: 200;
 }
 @media screen and (min-width: 1101px) {
-  .pytorch-left-menu {
+  .determined-ai-left-menu {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
     display: block;
@@ -11359,7 +11323,7 @@ body {
     border-right: solid 1px #e2e2e2;
     border-bottom: 0;
   }
-  .pytorch-left-menu.make-fixed {
+  .determined-ai-left-menu.make-fixed {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -11368,12 +11332,12 @@ body {
   }
 }
 @media screen and (min-width: 1600px) {
-  .pytorch-left-menu {
+  .determined-ai-left-menu {
     width: 21.875rem;
   }
 }
 
-.pytorch-left-menu p.caption {
+.determined-ai-left-menu p.caption {
   color: #262626;
   display: block;
   display: inline-block;
@@ -11384,28 +11348,28 @@ body {
   text-transform: none;
 }
 
-.pytorch-left-menu-search {
+.determined-ai-left-menu-search {
   padding: 0;
 }
 
-.pytorch-left-menu-search ::-webkit-input-placeholder {
+.determined-ai-left-menu-search ::-webkit-input-placeholder {
   color: #cccdd1;
   font-style: italic;
 }
-.pytorch-left-menu-search :-ms-input-placeholder {
+.determined-ai-left-menu-search :-ms-input-placeholder {
   color: #cccdd1;
   font-style: italic;
 }
-.pytorch-left-menu-search ::-ms-input-placeholder {
+.determined-ai-left-menu-search ::-ms-input-placeholder {
   color: #cccdd1;
   font-style: italic;
 }
-.pytorch-left-menu-search ::placeholder {
+.determined-ai-left-menu-search ::placeholder {
   color: #cccdd1;
   font-style: italic;
 }
 
-.pytorch-left-menu-search input[type=text] {
+.determined-ai-left-menu-search input[type=text] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11426,22 +11390,22 @@ body {
   color: #0d1e2b;
   font-size: 1rem;
 }
-.pytorch-left-menu-search input[type=text]:focus {
+.determined-ai-left-menu-search input[type=text]:focus {
   outline: 0;
 }
 
 @media screen and (min-width: 1101px) {
-  .pytorch-left-menu .pytorch-side-scroll {
+  .determined-ai-left-menu .determined-ai-side-scroll {
     width: 120%;
   }
 }
 @media screen and (min-width: 1600px) {
-  .pytorch-left-menu .pytorch-side-scroll {
+  .determined-ai-left-menu .determined-ai-side-scroll {
     width: 340px;
   }
 }
 
-.pytorch-right-menu {
+.determined-ai-right-menu {
   min-height: 100px;
   left: 0;
   z-index: 200;
@@ -11449,102 +11413,102 @@ body {
   position: relative;
 }
 @media screen and (min-width: 1101px) {
-  .pytorch-right-menu {
+  .determined-ai-right-menu {
     width: 100%;
   }
-  .pytorch-right-menu.scrolling-fixed {
+  .determined-ai-right-menu.scrolling-fixed {
     position: fixed;
     top: 45px;
     left: 83.5%;
     width: 14%;
   }
-  .pytorch-right-menu.scrolling-absolute {
+  .determined-ai-right-menu.scrolling-absolute {
     position: absolute;
     left: 0;
   }
 }
 @media screen and (min-width: 1600px) {
-  .pytorch-right-menu {
+  .determined-ai-right-menu {
     left: 0;
     width: 380px;
   }
-  .pytorch-right-menu.scrolling-fixed {
+  .determined-ai-right-menu.scrolling-fixed {
     position: fixed;
     top: 45px;
     left: 1230px;
   }
-  .pytorch-right-menu.scrolling-absolute {
+  .determined-ai-right-menu.scrolling-absolute {
     position: absolute;
     left: 0;
   }
 }
 
-.pytorch-left-menu ul,
-.pytorch-right-menu ul {
+.determined-ai-left-menu ul,
+.determined-ai-right-menu ul {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 2.5rem;
 }
-.pytorch-left-menu > ul,
-.pytorch-right-menu > ul {
+.determined-ai-left-menu > ul,
+.determined-ai-right-menu > ul {
   margin-bottom: 2.5rem;
 }
-.pytorch-left-menu a:link,
-.pytorch-left-menu a:visited,
-.pytorch-left-menu a:hover,
-.pytorch-right-menu a:link,
-.pytorch-right-menu a:visited,
-.pytorch-right-menu a:hover {
+.determined-ai-left-menu a:link,
+.determined-ai-left-menu a:visited,
+.determined-ai-left-menu a:hover,
+.determined-ai-right-menu a:link,
+.determined-ai-right-menu a:visited,
+.determined-ai-right-menu a:hover {
   color: #6c6c6d;
   font-size: 0.875rem;
   line-height: 1rem;
   padding: 0;
   text-decoration: none;
 }
-.pytorch-left-menu a:link.reference.internal,
-.pytorch-left-menu a:visited.reference.internal,
-.pytorch-left-menu a:hover.reference.internal,
-.pytorch-right-menu a:link.reference.internal,
-.pytorch-right-menu a:visited.reference.internal,
-.pytorch-right-menu a:hover.reference.internal {
+.determined-ai-left-menu a:link.reference.internal,
+.determined-ai-left-menu a:visited.reference.internal,
+.determined-ai-left-menu a:hover.reference.internal,
+.determined-ai-right-menu a:link.reference.internal,
+.determined-ai-right-menu a:visited.reference.internal,
+.determined-ai-right-menu a:hover.reference.internal {
   margin-bottom: 0.3125rem;
   position: relative;
 }
-.pytorch-left-menu li code,
-.pytorch-right-menu li code {
+.determined-ai-left-menu li code,
+.determined-ai-right-menu li code {
   border: none;
   background: inherit;
   color: inherit;
   padding-left: 0;
   padding-right: 0;
 }
-.pytorch-left-menu li span.toctree-expand,
-.pytorch-right-menu li span.toctree-expand {
+.determined-ai-left-menu li span.toctree-expand,
+.determined-ai-right-menu li span.toctree-expand {
   display: block;
   float: left;
   margin-left: -1.2em;
   font-size: 0.8em;
   line-height: 1.6em;
 }
-.pytorch-left-menu li.on a, .pytorch-left-menu li.current > a,
-.pytorch-right-menu li.on a,
-.pytorch-right-menu li.current > a {
+.determined-ai-left-menu li.on a, .determined-ai-left-menu li.current > a,
+.determined-ai-right-menu li.on a,
+.determined-ai-right-menu li.current > a {
   position: relative;
   border: none;
 }
-.pytorch-left-menu li.on a span.toctree-expand, .pytorch-left-menu li.current > a span.toctree-expand,
-.pytorch-right-menu li.on a span.toctree-expand,
-.pytorch-right-menu li.current > a span.toctree-expand {
+.determined-ai-left-menu li.on a span.toctree-expand, .determined-ai-left-menu li.current > a span.toctree-expand,
+.determined-ai-right-menu li.on a span.toctree-expand,
+.determined-ai-right-menu li.current > a span.toctree-expand {
   display: block;
   font-size: 0.8em;
   line-height: 1.6em;
 }
-.pytorch-left-menu li.toctree-l1.current > a,
-.pytorch-right-menu li.toctree-l1.current > a {
+.determined-ai-left-menu li.toctree-l1.current > a,
+.determined-ai-right-menu li.toctree-l1.current > a {
   color: #f77b21;
 }
-.pytorch-left-menu li.toctree-l1.current > a:before,
-.pytorch-right-menu li.toctree-l1.current > a:before {
+.determined-ai-left-menu li.toctree-l1.current > a:before,
+.determined-ai-right-menu li.toctree-l1.current > a:before {
   content: "\2022";
   display: inline-block;
   position: absolute;
@@ -11554,97 +11518,97 @@ body {
   color: #f77b21;
 }
 @media screen and (min-width: 1101px) {
-  .pytorch-left-menu li.toctree-l1.current > a:before,
-  .pytorch-right-menu li.toctree-l1.current > a:before {
+  .determined-ai-left-menu li.toctree-l1.current > a:before,
+  .determined-ai-right-menu li.toctree-l1.current > a:before {
     left: -20px;
   }
 }
-.pytorch-left-menu li.toctree-l1.current li.toctree-l2 > ul, .pytorch-left-menu li.toctree-l2.current li.toctree-l3 > ul,
-.pytorch-right-menu li.toctree-l1.current li.toctree-l2 > ul,
-.pytorch-right-menu li.toctree-l2.current li.toctree-l3 > ul {
+.determined-ai-left-menu li.toctree-l1.current li.toctree-l2 > ul, .determined-ai-left-menu li.toctree-l2.current li.toctree-l3 > ul,
+.determined-ai-right-menu li.toctree-l1.current li.toctree-l2 > ul,
+.determined-ai-right-menu li.toctree-l2.current li.toctree-l3 > ul {
   display: none;
 }
-.pytorch-left-menu li.toctree-l1.current li.toctree-l2.current > ul, .pytorch-left-menu li.toctree-l2.current li.toctree-l3.current > ul,
-.pytorch-right-menu li.toctree-l1.current li.toctree-l2.current > ul,
-.pytorch-right-menu li.toctree-l2.current li.toctree-l3.current > ul {
+.determined-ai-left-menu li.toctree-l1.current li.toctree-l2.current > ul, .determined-ai-left-menu li.toctree-l2.current li.toctree-l3.current > ul,
+.determined-ai-right-menu li.toctree-l1.current li.toctree-l2.current > ul,
+.determined-ai-right-menu li.toctree-l2.current li.toctree-l3.current > ul {
   display: block;
 }
-.pytorch-left-menu li.toctree-l2.current li.toctree-l3 > a,
-.pytorch-right-menu li.toctree-l2.current li.toctree-l3 > a {
+.determined-ai-left-menu li.toctree-l2.current li.toctree-l3 > a,
+.determined-ai-right-menu li.toctree-l2.current li.toctree-l3 > a {
   display: block;
 }
-.pytorch-left-menu li.toctree-l3,
-.pytorch-right-menu li.toctree-l3 {
+.determined-ai-left-menu li.toctree-l3,
+.determined-ai-right-menu li.toctree-l3 {
   font-size: 0.9em;
 }
-.pytorch-left-menu li.toctree-l3.current li.toctree-l4 > a,
-.pytorch-right-menu li.toctree-l3.current li.toctree-l4 > a {
+.determined-ai-left-menu li.toctree-l3.current li.toctree-l4 > a,
+.determined-ai-right-menu li.toctree-l3.current li.toctree-l4 > a {
   display: block;
 }
-.pytorch-left-menu li.toctree-l4,
-.pytorch-right-menu li.toctree-l4 {
+.determined-ai-left-menu li.toctree-l4,
+.determined-ai-right-menu li.toctree-l4 {
   font-size: 0.9em;
 }
-.pytorch-left-menu li.current ul,
-.pytorch-right-menu li.current ul {
+.determined-ai-left-menu li.current ul,
+.determined-ai-right-menu li.current ul {
   display: block;
 }
-.pytorch-left-menu li ul,
-.pytorch-right-menu li ul {
+.determined-ai-left-menu li ul,
+.determined-ai-right-menu li ul {
   margin-bottom: 0;
   display: none;
 }
-.pytorch-left-menu li ul li a,
-.pytorch-right-menu li ul li a {
+.determined-ai-left-menu li ul li a,
+.determined-ai-right-menu li ul li a {
   margin-bottom: 0;
 }
-.pytorch-left-menu a,
-.pytorch-right-menu a {
+.determined-ai-left-menu a,
+.determined-ai-right-menu a {
   display: inline-block;
   position: relative;
 }
-.pytorch-left-menu a:hover,
-.pytorch-right-menu a:hover {
+.determined-ai-left-menu a:hover,
+.determined-ai-right-menu a:hover {
   cursor: pointer;
 }
-.pytorch-left-menu a:active,
-.pytorch-right-menu a:active {
+.determined-ai-left-menu a:active,
+.determined-ai-right-menu a:active {
   cursor: pointer;
 }
 
-.pytorch-left-menu ul {
+.determined-ai-left-menu ul {
   padding-left: 0;
 }
 
-.pytorch-right-menu a:link,
-.pytorch-right-menu a:visited,
-.pytorch-right-menu a:hover {
+.determined-ai-right-menu a:link,
+.determined-ai-right-menu a:visited,
+.determined-ai-right-menu a:hover {
   color: #6c6c6d;
 }
-.pytorch-right-menu a:link span.pre,
-.pytorch-right-menu a:visited span.pre,
-.pytorch-right-menu a:hover span.pre {
+.determined-ai-right-menu a:link span.pre,
+.determined-ai-right-menu a:visited span.pre,
+.determined-ai-right-menu a:hover span.pre {
   color: #6c6c6d;
 }
-.pytorch-right-menu a.reference.internal.expanded:before {
+.determined-ai-right-menu a.reference.internal.expanded:before {
   content: "-";
   font-family: monospace;
   position: absolute;
   left: -12px;
 }
-.pytorch-right-menu a.reference.internal.not-expanded:before {
+.determined-ai-right-menu a.reference.internal.not-expanded:before {
   content: "+";
   font-family: monospace;
   position: absolute;
   left: -12px;
 }
-.pytorch-right-menu li.active > a {
+.determined-ai-right-menu li.active > a {
   color: #f77b21;
 }
-.pytorch-right-menu li.active > a span.pre, .pytorch-right-menu li.active > a:before {
+.determined-ai-right-menu li.active > a span.pre, .determined-ai-right-menu li.active > a:before {
   color: #f77b21;
 }
-.pytorch-right-menu li.active > a:after {
+.determined-ai-right-menu li.active > a:after {
   content: "\2022";
   color: #e44c2c;
   display: inline-block;
@@ -11653,60 +11617,60 @@ body {
   position: absolute;
   top: -2px;
 }
-.pytorch-right-menu .pytorch-side-scroll > ul > li > ul > li {
+.determined-ai-right-menu .determined-ai-side-scroll > ul > li > ul > li {
   margin-bottom: 0;
 }
-.pytorch-right-menu ul ul {
+.determined-ai-right-menu ul ul {
   padding-left: 0;
 }
-.pytorch-right-menu ul ul li {
+.determined-ai-right-menu ul ul li {
   padding-left: 0px;
 }
-.pytorch-right-menu ul ul li a.reference.internal {
+.determined-ai-right-menu ul ul li a.reference.internal {
   padding-left: 0;
 }
-.pytorch-right-menu ul ul li ul {
+.determined-ai-right-menu ul ul li ul {
   display: none;
   padding-left: 10px;
 }
-.pytorch-right-menu ul ul li li a.reference.internal {
+.determined-ai-right-menu ul ul li li a.reference.internal {
   padding-left: 0;
   line-height: 1.5;
 }
-.pytorch-right-menu li ul {
+.determined-ai-right-menu li ul {
   display: block;
 }
 
-.pytorch-right-menu .pytorch-side-scroll {
+.determined-ai-right-menu .determined-ai-side-scroll {
   padding: 1.875rem 0;
 }
 @media screen and (min-width: 1101px) {
-  .pytorch-right-menu .pytorch-side-scroll {
+  .determined-ai-right-menu .determined-ai-side-scroll {
     width: 120%;
   }
 }
 @media screen and (min-width: 1600px) {
-  .pytorch-right-menu .pytorch-side-scroll {
+  .determined-ai-right-menu .determined-ai-side-scroll {
     width: 400px;
   }
 }
-.pytorch-right-menu .pytorch-side-scroll > ul {
+.determined-ai-right-menu .determined-ai-side-scroll > ul {
   margin-bottom: 0;
   /* d.ai */
   padding-left: 1.875rem;
   padding-left: 1.875rem;
 }
 @media screen and (min-width: 1600px) {
-  .pytorch-right-menu .pytorch-side-scroll > ul {
+  .determined-ai-right-menu .determined-ai-side-scroll > ul {
     /* d.ai */
     padding-left: 0.9375rem;
   }
 }
-.pytorch-right-menu .pytorch-side-scroll > ul > li > a.reference.internal {
+.determined-ai-right-menu .determined-ai-side-scroll > ul > li > a.reference.internal {
   color: #262626;
   font-weight: 500;
 }
-.pytorch-right-menu .pytorch-side-scroll ul li {
+.determined-ai-right-menu .determined-ai-side-scroll ul li {
   position: relative;
 }
 
@@ -11761,7 +11725,7 @@ body {
   }
 }
 
-.pytorch-page-level-bar {
+.determined-ai-page-level-bar {
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -11772,7 +11736,7 @@ body {
   z-index: 201;
 }
 @media screen and (min-width: 1101px) {
-  .pytorch-page-level-bar {
+  .determined-ai-page-level-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11784,21 +11748,21 @@ body {
   }
 }
 @media screen and (min-width: 1600px) {
-  .pytorch-page-level-bar {
+  .determined-ai-page-level-bar {
     width: auto;
     z-index: 1;
   }
 }
-.pytorch-page-level-bar ul, .pytorch-page-level-bar li {
+.determined-ai-page-level-bar ul, .determined-ai-page-level-bar li {
   margin: 0;
 }
 
-.pytorch-shortcuts-wrapper {
+.determined-ai-shortcuts-wrapper {
   display: none;
   padding: 0 0.9375rem;
 }
 @media screen and (min-width: 1101px) {
-  .pytorch-shortcuts-wrapper {
+  .determined-ai-shortcuts-wrapper {
     font-size: 0.875rem;
   }
 }

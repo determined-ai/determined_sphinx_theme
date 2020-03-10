@@ -6,7 +6,7 @@ window.mobileTOC = {
       if ($(this).hasClass("is-open")) {
         $(this).removeClass("is-open");
         $(".hamburger").removeClass("is-active");
-        $(".pytorch-left-menu")
+        $(".determined-ai-left-menu")
           .stop(true, true)
           .animate({ top: -100, opacity: 0 }, 200, function() {
             $(this).css({ display: '', top: '', opacity: '' });
@@ -14,7 +14,7 @@ window.mobileTOC = {
       } else {
         $(this).addClass("is-open");
         $(".hamburger").addClass("is-active");
-        $(".pytorch-left-menu")
+        $(".determined-ai-left-menu")
           .stop(true, true)
           .css({ display: 'block', top: '-100px', opacity: 0 })
           .animate({ top: 0, opacity: 1 }, 200);

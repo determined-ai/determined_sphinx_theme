@@ -88,13 +88,13 @@ window.utilities = {
 
   headersHeight: function() {
     // TODO: may require fixing for responsive
-    // if (document.getElementById("pytorch-left-menu").classList.contains("make-fixed")) {
-    //   return document.getElementById("pytorch-page-level-bar").offsetHeight;
+    // if (document.getElementById("determined-ai-left-menu").classList.contains("make-fixed")) {
+    //   return document.getElementById("determined-ai-page-level-bar").offsetHeight;
     // } else {
     //   return document.getElementById("header-holder").offsetHeight +
-    //          document.getElementById("pytorch-page-level-bar").offsetHeight;
+    //          document.getElementById("determined-ai-page-level-bar").offsetHeight;
     // }
-    return document.getElementById("pytorch-page-level-bar").offsetHeight;
+    return document.getElementById("determined-ai-page-level-bar").offsetHeight;
   },
 
   windowHeight: function() {
@@ -122,7 +122,7 @@ var cookieBanner = {
   },
 
   cookieExists: function() {
-    var cookie = localStorage.getItem("returningPytorchUser");
+    var cookie = localStorage.getItem("returningDeterminedAIUser");
 
     if (cookie) {
       return true;
@@ -132,7 +132,7 @@ var cookieBanner = {
   },
 
   setCookie: function() {
-    localStorage.setItem("returningPytorchUser", true);
+    localStorage.setItem("returningDeterminedAIUser", true);
   },
 
   showCookieNotice: function() {
@@ -149,10 +149,30 @@ $(function() {
 });
 
 },{}],3:[function(require,module,exports){
+window.determinedAIAnchors = {
+  bind: function() {
+    // Replace Sphinx-generated anchors with anchorjs ones
+    $(".headerlink").text("");
+
+    window.anchors.add(".determined-ai-article .headerlink");
+
+    $(".anchorjs-link").each(function() {
+      var $headerLink = $(this).closest(".headerlink");
+      var href = $headerLink.attr("href");
+      var clone = this.outerHTML;
+
+      $clone = $(clone).attr("href", href);
+      $headerLink.before($clone);
+      $headerLink.remove();
+    });
+  }
+};
+
+},{}],4:[function(require,module,exports){
 // Modified from https://stackoverflow.com/a/32396543
 window.highlightNavigation = {
-  navigationListItems: document.querySelectorAll("#pytorch-right-menu li"),
-  sections: document.querySelectorAll(".pytorch-article .section"),
+  navigationListItems: document.querySelectorAll("#determined-ai-right-menu li"),
+  sections: document.querySelectorAll(".determined-ai-article .section"),
   sectionIdTonavigationLink: {},
 
   bind: function() {
@@ -163,14 +183,14 @@ window.highlightNavigation = {
     for (var i = 0; i < highlightNavigation.sections.length; i++) {
       var id = highlightNavigation.sections[i].id;
       highlightNavigation.sectionIdTonavigationLink[id] =
-        document.querySelectorAll('#pytorch-right-menu li a[href="#' + id + '"]')[0];
+        document.querySelectorAll('#determined-ai-right-menu li a[href="#' + id + '"]')[0];
     }
 
     $(window).scroll(utilities.throttle(highlightNavigation.highlight, 100));
   },
 
   highlight: function() {
-    var rightMenu = document.getElementById("pytorch-right-menu");
+    var rightMenu = document.getElementById("determined-ai-right-menu");
 
     // If right menu is not on the screen don't bother
     if (rightMenu.offsetWidth === 0 && rightMenu.offsetHeight === 0) {
@@ -180,7 +200,7 @@ window.highlightNavigation = {
     var scrollPosition = utilities.scrollTop();
     var OFFSET_TOP_PADDING = 25;
     var offset = document.getElementById("header-holder").offsetHeight +
-                 document.getElementById("pytorch-page-level-bar").offsetHeight +
+                 document.getElementById("determined-ai-page-level-bar").offsetHeight +
                  OFFSET_TOP_PADDING;
 
     var sections = highlightNavigation.sections;
@@ -205,12 +225,12 @@ window.highlightNavigation = {
 
           // Scroll to active item. Not a requested feature but we could revive it. Needs work.
 
-          // var menuTop = $("#pytorch-right-menu").position().top;
+          // var menuTop = $("#determined-ai-right-menu").position().top;
           // var itemTop = navigationListItem.getBoundingClientRect().top;
           // var TOP_PADDING = 20
-          // var newActiveTop = $("#pytorch-side-scroll-right").scrollTop() + itemTop - menuTop - TOP_PADDING;
+          // var newActiveTop = $("#determined-ai-side-scroll-right").scrollTop() + itemTop - menuTop - TOP_PADDING;
 
-          // $("#pytorch-side-scroll-right").animate({
+          // $("#determined-ai-side-scroll-right").animate({
           //   scrollTop: newActiveTop
           // }, 100);
         }
@@ -221,7 +241,7 @@ window.highlightNavigation = {
   }
 };
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 window.mainMenuDropdown = {
   bind: function() {
     $("[data-toggle='ecosystem-dropdown']").on("click", function() {
@@ -248,7 +268,7 @@ window.mainMenuDropdown = {
   }
 };
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 window.mobileMenu = {
   bind: function() {
     $("[data-behavior='open-mobile-menu']").on('click', function(e) {
@@ -280,7 +300,7 @@ window.mobileMenu = {
   }
 };
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 window.mobileTOC = {
   bind: function() {
     $("[data-behavior='toggle-table-of-contents']").on("click", function(e) {
@@ -289,7 +309,7 @@ window.mobileTOC = {
       if ($(this).hasClass("is-open")) {
         $(this).removeClass("is-open");
         $(".hamburger").removeClass("is-active");
-        $(".pytorch-left-menu")
+        $(".determined-ai-left-menu")
           .stop(true, true)
           .animate({ top: -100, opacity: 0 }, 200, function() {
             $(this).css({ display: '', top: '', opacity: '' });
@@ -297,7 +317,7 @@ window.mobileTOC = {
       } else {
         $(this).addClass("is-open");
         $(".hamburger").addClass("is-active");
-        $(".pytorch-left-menu")
+        $(".determined-ai-left-menu")
           .stop(true, true)
           .css({ display: 'block', top: '-100px', opacity: 0 })
           .animate({ top: 0, opacity: 1 }, 200);
@@ -305,26 +325,6 @@ window.mobileTOC = {
     });
   }
 }
-
-},{}],7:[function(require,module,exports){
-window.pytorchAnchors = {
-  bind: function() {
-    // Replace Sphinx-generated anchors with anchorjs ones
-    $(".headerlink").text("");
-
-    window.anchors.add(".pytorch-article .headerlink");
-
-    $(".anchorjs-link").each(function() {
-      var $headerLink = $(this).closest(".headerlink");
-      var href = $headerLink.attr("href");
-      var clone = this.outerHTML;
-
-      $clone = $(clone).attr("href", href);
-      $headerLink.before($clone);
-      $headerLink.remove();
-    });
-  }
-};
 
 },{}],8:[function(require,module,exports){
 // Modified from https://stackoverflow.com/a/13067009
@@ -354,7 +354,7 @@ window.scrollToAnchor = {
         // This interferes with clicks below it, causing a double fire
         // $(window).on('hashchange', $.proxy(this, 'scrollToCurrent'));
         $('body').on('click', 'a', $.proxy(this, 'delegateAnchors'));
-        $('body').on('click', '#pytorch-right-menu li span', $.proxy(this, 'delegateSpans'));
+        $('body').on('click', '#determined-ai-right-menu li span', $.proxy(this, 'delegateSpans'));
       },
 
       /**
@@ -381,10 +381,10 @@ window.scrollToAnchor = {
         match = document.getElementById(href.slice(1));
 
         if(match) {
-          var anchorOffset = $(match).offset().top - this.getFixedOffset() + $('.pytorch-content-left').scrollTop();
+          var anchorOffset = $(match).offset().top - this.getFixedOffset() + $('.determined-ai-content-left').scrollTop();
 
-          // $('html, body, .pytorch-content-left').scrollTop(anchorOffset);
-          $('.pytorch-content-left').animate({ scrollTop: anchorOffset });
+          // $('html, body, .determined-ai-content-left').scrollTop(anchorOffset);
+          $('.determined-ai-content-left').animate({ scrollTop: anchorOffset });
 
           // Add the state to history as-per normal anchor links
           if(HISTORY_SUPPORT && pushToHistory) {
@@ -431,7 +431,7 @@ window.scrollToAnchor = {
 },{}],9:[function(require,module,exports){
 window.sideMenus = {
   rightMenuIsOnScreen: function() {
-    return document.getElementById("pytorch-content-right").offsetParent !== null;
+    return document.getElementById("determined-ai-content-right").offsetParent !== null;
   },
 
   isFixedToBottom: false,
@@ -439,7 +439,7 @@ window.sideMenus = {
   bind: function() {
     sideMenus.handleLeftMenu();
 
-    var rightMenuLinks = document.querySelectorAll("#pytorch-right-menu li");
+    var rightMenuLinks = document.querySelectorAll("#determined-ai-right-menu li");
     var rightMenuHasLinks = rightMenuLinks.length > 1;
 
     if (!rightMenuHasLinks) {
@@ -450,14 +450,14 @@ window.sideMenus = {
 
     if (rightMenuHasLinks) {
       // Don't show the Shortcuts menu title text unless there are menu items
-      document.getElementById("pytorch-shortcuts-wrapper").style.display = "block";
+      document.getElementById("determined-ai-shortcuts-wrapper").style.display = "block";
 
       // We are hiding the titles of the pages in the right side menu but there are a few
       // pages that include other pages in the right side menu (see 'torch.nn' in the docs)
       // so if we exclude those it looks confusing. Here we add a 'title-link' class to these
       // links so we can exclude them from normal right side menu link operations
       var titleLinks = document.querySelectorAll(
-        "#pytorch-right-menu #pytorch-side-scroll-right \
+        "#determined-ai-right-menu #determined-ai-side-scroll-right \
          > ul > li > a.reference.internal"
       );
 
@@ -477,7 +477,7 @@ window.sideMenus = {
 
       // Add + expansion signifiers to normal right menu links that have sub menus
       var menuLinks = document.querySelectorAll(
-        "#pytorch-right-menu ul li ul li a.reference.internal"
+        "#determined-ai-right-menu ul li ul li a.reference.internal"
       );
 
       for (var i = 0; i < menuLinks.length; i++) {
@@ -492,7 +492,7 @@ window.sideMenus = {
       // If a hash is present on page load recursively expand menu items leading to selected item
       var linkWithHash =
         document.querySelector(
-          "#pytorch-right-menu a[href=\"" + window.location.hash + "\"]"
+          "#determined-ai-right-menu a[href=\"" + window.location.hash + "\"]"
         );
 
       if (linkWithHash) {
@@ -511,7 +511,7 @@ window.sideMenus = {
       }
 
       // Bind click events on right menu links
-      $("#pytorch-right-menu a.reference.internal").on("click", function() {
+      $("#determined-ai-right-menu a.reference.internal").on("click", function() {
         if (this.classList.contains("expanded")) {
           this.nextElementSibling.style.display = "none";
           this.classList.remove("expanded");
@@ -538,7 +538,7 @@ window.sideMenus = {
   },
 
   leftMenuIsFixed: function() {
-    return document.getElementById("pytorch-left-menu").classList.contains("make-fixed");
+    return document.getElementById("determined-ai-left-menu").classList.contains("make-fixed");
   },
 
   handleNavBar: function() {
@@ -546,11 +546,11 @@ window.sideMenus = {
 
     // If we are scrolled past the main navigation header fix the sub menu bar to top of page
     if (utilities.scrollTop() >= mainHeaderHeight) {
-      document.getElementById("pytorch-left-menu").classList.add("make-fixed");
-      document.getElementById("pytorch-page-level-bar").classList.add("left-menu-is-fixed");
+      document.getElementById("determined-ai-left-menu").classList.add("make-fixed");
+      document.getElementById("determined-ai-page-level-bar").classList.add("left-menu-is-fixed");
     } else {
-      document.getElementById("pytorch-left-menu").classList.remove("make-fixed");
-      document.getElementById("pytorch-page-level-bar").classList.remove("left-menu-is-fixed");
+      document.getElementById("determined-ai-left-menu").classList.remove("make-fixed");
+      document.getElementById("determined-ai-page-level-bar").classList.remove("left-menu-is-fixed");
     }
   },
 
@@ -582,19 +582,19 @@ window.sideMenus = {
     // var topOfFooterRelativeToWindow = document.getElementById("docs-tutorials-resources").getBoundingClientRect().top;
 
     // if (topOfFooterRelativeToWindow >= windowHeight) {
-    //   document.getElementById("pytorch-left-menu").style.height = "100%";
+    //   document.getElementById("determined-ai-left-menu").style.height = "100%";
     // } else {
     //   var howManyPixelsOfTheFooterAreInTheWindow = windowHeight - topOfFooterRelativeToWindow;
     //   var leftMenuDifference = howManyPixelsOfTheFooterAreInTheWindow;
-    //   document.getElementById("pytorch-left-menu").style.height = (windowHeight - leftMenuDifference) + "px";
+    //   document.getElementById("determined-ai-left-menu").style.height = (windowHeight - leftMenuDifference) + "px";
     // }
   },
 
   handleRightMenu: function() {
-    // var rightMenuWrapper = document.getElementById("pytorch-content-right");
-    // var rightMenu = document.getElementById("pytorch-right-menu");
+    // var rightMenuWrapper = document.getElementById("determined-ai-content-right");
+    // var rightMenu = document.getElementById("determined-ai-right-menu");
     // var rightMenuList = rightMenu.getElementsByTagName("ul")[0];
-    // var article = document.getElementById("pytorch-article");
+    // var article = document.getElementById("determined-ai-article");
     // var articleHeight = article.offsetHeight;
     // var articleBottom = utilities.offset(article).top + articleHeight;
     // var mainHeaderHeight = document.getElementById('header-holder').offsetHeight;
@@ -631,7 +631,7 @@ window.sideMenus = {
     //   }
     // }
 
-    // var rightMenuSideScroll = document.getElementById("pytorch-side-scroll-right");
+    // var rightMenuSideScroll = document.getElementById("determined-ai-side-scroll-right");
     // var sideScrollFromWindowTop = rightMenuSideScroll.getBoundingClientRect().top;
 
     // rightMenuSideScroll.style.height = utilities.windowHeight() - sideScrollFromWindowTop + "px";
@@ -714,19 +714,19 @@ function ThemeNav () {
         var doc = $(document),
             self = this;
 
-        this.navBar = $('div.pytorch-side-scroll:first');
+        this.navBar = $('div.determined-ai-side-scroll:first');
         this.win = $(window);
 
         // Set up javascript UX bits
         $(document)
             // Shift nav in mobile when clicking the menu.
-            .on('click', "[data-toggle='pytorch-left-menu-nav-top']", function() {
+            .on('click', "[data-toggle='determined-ai-left-menu-nav-top']", function() {
                 $("[data-toggle='wy-nav-shift']").toggleClass("shift");
                 $("[data-toggle='rst-versions']").toggleClass("shift");
             })
 
             // Nav menu link click operations
-            .on('click', ".pytorch-menu-vertical .current ul li a", function() {
+            .on('click', ".determined-ai-menu-vertical .current ul li a", function() {
                 var target = $(this);
                 // Close menu when you click a link.
                 $("[data-toggle='wy-nav-shift']").removeClass("shift");
@@ -751,7 +751,7 @@ function ThemeNav () {
             .wrap("<div class='wy-table-responsive citation'></div>");
 
         // Add expand links to all parents of nested ul
-        $('.pytorch-menu-vertical ul').not('.simple').siblings('a').each(function () {
+        $('.determined-ai-menu-vertical ul').not('.simple').siblings('a').each(function () {
             var link = $(this);
                 expand = $('<span class="toctree-expand"></span>');
             expand.on('click', function (ev) {
@@ -768,7 +768,7 @@ function ThemeNav () {
         var anchor = encodeURI(window.location.hash) || '#';
 
         try {
-            var vmenu = $('.pytorch-menu-vertical');
+            var vmenu = $('.determined-ai-menu-vertical');
             var link = vmenu.find('[href="' + anchor + '"]');
             if (link.length === 0) {
                 // this link was not found in the sidebar.
@@ -785,7 +785,7 @@ function ThemeNav () {
             // If we found a matching link then reset current and re-apply
             // otherwise retain the existing match
             if (link.length > 0) {
-                $('.pytorch-menu-vertical .current').removeClass('current');
+                $('.determined-ai-menu-vertical .current').removeClass('current');
                 link.addClass('current');
                 link.closest('li.toctree-l1').addClass('current');
                 link.closest('li.toctree-l1').parent().addClass('current');
@@ -900,7 +900,7 @@ if (downloadNote.length >= 1) {
     $("#download-notebook-link").wrap("<a href=" + notebookLink + " data-behavior='call-to-action-event' data-response='Download Notebook'/>");
     $("#github-view-link").wrap("<a href=" + githubLink + " data-behavior='call-to-action-event' data-response='View on Github' target='_blank'/>");
 } else {
-    $(".pytorch-call-to-action-links").hide();
+    $(".determined-ai-call-to-action-links").hide();
 }
 
 },{"jquery":"jquery"}]},{},[1,2,3,4,5,6,7,8,9,"pt-lightning-sphinx-theme"]);
