@@ -2,7 +2,7 @@ import os
 
 from setuptools import setup
 from io import open
-from pt_lightning_sphinx_theme import __version__
+from determined_ai_sphinx_theme import __version__
 
 
 def package_files(directory:str):
@@ -33,26 +33,26 @@ def package_files(directory:str):
 
 
 setup(
-    name = 'pt_lightning_sphinx_theme',
+    name = 'determined_ai_sphinx_theme',
     version =__version__,
     author = 'Shift Lab',
     author_email= 'info@shiftlabny.com',
     url="https://github.com/pytorch/lightning_sphinx_theme",
     docs_url="https://github.com/pytorch/lightning_sphinx_theme",
     description='PyTorch Sphinx Theme',
-    py_modules = ['pt_lightning_sphinx_theme'],
-    packages = ['pt_lightning_sphinx_theme'],
+    py_modules = ['determined_ai_sphinx_theme'],
+    packages = ['determined_ai_sphinx_theme'],
     include_package_data=True,
     zip_safe=False,
-    package_data={'pt_lightning_sphinx_theme': [
+    package_data={'determined_ai_sphinx_theme': [
         'theme.conf',
         '*.html',
         'theme_variables.jinja',
-        *package_files('pt_lightning_sphinx_theme/static')
+        *package_files('determined_ai_sphinx_theme/static')
     ]},
     entry_points = {
         'sphinx.html_themes': [
-            'pt_lightning_sphinx_theme = pt_lightning_sphinx_theme',
+            'determined_ai_sphinx_theme = determined_ai_sphinx_theme',
         ]
     },
     license= 'MIT License',
