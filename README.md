@@ -1,6 +1,6 @@
-# PyTorch-Lightning Sphinx Theme
+# Determined AI Sphinx Theme
 
-Sphinx theme for [PyTorch-Lightning Docs](https://pytorch-lightning.readthedocs.io/en/latest/) based on the [Read the Docs Sphinx Theme](https://sphinx-rtd-theme.readthedocs.io/en/latest).
+[Sphinx theme for Determined AI Docs](https://github.com/determined-ai/pedl_sphinx_theme) based on the [Read the Docs Sphinx Theme](https://sphinx-rtd-theme.readthedocs.io/en/latest).
 
 ## Local Development
 

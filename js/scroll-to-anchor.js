@@ -25,7 +25,7 @@ window.scrollToAnchor = {
         // This interferes with clicks below it, causing a double fire
         // $(window).on('hashchange', $.proxy(this, 'scrollToCurrent'));
         $('body').on('click', 'a', $.proxy(this, 'delegateAnchors'));
-        $('body').on('click', '#pytorch-right-menu li span', $.proxy(this, 'delegateSpans'));
+        $('body').on('click', '#determined-ai-right-menu li span', $.proxy(this, 'delegateSpans'));
       },
 
       /**
@@ -52,10 +52,10 @@ window.scrollToAnchor = {
         match = document.getElementById(href.slice(1));
 
         if(match) {
-          var anchorOffset = $(match).offset().top - this.getFixedOffset() + $('.pytorch-content-left').scrollTop();
+          var anchorOffset = $(match).offset().top - this.getFixedOffset() + $('.determined-ai-content-left').scrollTop();
 
-          // $('html, body, .pytorch-content-left').scrollTop(anchorOffset);
-          $('.pytorch-content-left').animate({ scrollTop: anchorOffset });
+          // $('html, body, .determined-ai-content-left').scrollTop(anchorOffset);
+          $('.determined-ai-content-left').animate({ scrollTop: anchorOffset });
 
           // Add the state to history as-per normal anchor links
           if(HISTORY_SUPPORT && pushToHistory) {

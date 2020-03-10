@@ -39,13 +39,6 @@ module.exports = function(grunt) {
           {
               expand: true,
               flatten: true,
-              src: ['fonts/FreightSans/*'],
-              dest: 'pt_lightning_sphinx_theme/static/fonts/FreightSans',
-              filter: 'isFile'
-          },
-          {
-              expand: true,
-              flatten: true,
               src: ['fonts/IBMPlexMono/*'],
               dest: 'pt_lightning_sphinx_theme/static/fonts/IBMPlexMono',
               filter: 'isFile'
