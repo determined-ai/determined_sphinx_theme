@@ -11307,6 +11307,8 @@ body {
   .pytorch-content-right {
     /* d.ai */
     display: block;
+    -ms-flex-preferred-size: 18.75rem;
+        flex-basis: 18.75rem;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -11669,6 +11671,7 @@ body {
 }
 .pytorch-right-menu ul ul li li a.reference.internal {
   padding-left: 0;
+  line-height: 1.5;
 }
 .pytorch-right-menu li ul {
   display: block;
