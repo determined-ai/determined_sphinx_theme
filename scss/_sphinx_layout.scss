@@ -111,6 +111,7 @@ body {
   @include sphinx-medium-size {
     /* d.ai */
     display: block;
+    flex-basis: rem(300px);
     // position: fixed;
     // right: 0;
     // width: 21%;
@@ -561,6 +562,7 @@ body {
 
       li a.reference.internal {
         padding-left: 0;
+        line-height: 1.5;
       }
     }
   }
