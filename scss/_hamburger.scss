@@ -29,7 +29,7 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
 
 .hamburger {
   padding: $hamburger-padding-y $hamburger-padding-x;
-  display: inline-block;
+  display: flex;
   cursor: pointer;
 
   transition-property: opacity, filter;

@@ -770,9 +770,17 @@ img.previous-page {
   transform: scaleX(-1);
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+footer > hr {
+  width: 100%;
+}
+
 .rst-footer-buttons {
-  margin-top: rem(30px);
-  margin-bottom: rem(30px);
   .btn:focus,
   .btn.focus {
     box-shadow: none;
