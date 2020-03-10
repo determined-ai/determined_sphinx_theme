@@ -34,6 +34,18 @@ module.exports = function(grunt) {
       }
     },
     copy: {
+      favicons: {
+        files: [
+          {
+            expand: true,
+            flatten: true,
+            src: ['favicons/*'],
+            dest: 'determined_ai_sphinx_theme/static/favicons',
+            filter: 'isFile'
+          }
+        ]
+      },
+
       fonts: {
         files: [
           {
@@ -188,6 +200,7 @@ module.exports = function(grunt) {
     },
     clean: {
       build: ["docs/build"],
+      favicons: ["determined_ai_sphinx_theme/static/favicons"],
       fonts: ["determined_ai_sphinx_theme/static/fonts"],
       images: ["determined_ai_sphinx_theme/static/images"],
       css: ["determined_ai_sphinx_theme/static/css"],
@@ -228,6 +241,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-open');
   grunt.loadNpmTasks('grunt-browserify');
 
-  grunt.registerTask('default', ['clean','copy:fonts', 'copy:images', 'copy:vendor', 'sass:dev', 'postcss:dist', 'browserify:dev','exec:build_sphinx','connect','open','watch']);
-  grunt.registerTask('build', ['clean','copy:fonts', 'copy:images', 'copy:vendor', 'sass:build', 'postcss:dist', 'browserify:build', 'uglify']);
+  grunt.registerTask('default', ['clean','copy:favicons','copy:fonts', 'copy:images', 'copy:vendor', 'sass:dev', 'postcss:dist', 'browserify:dev','exec:build_sphinx','connect','open','watch']);
+  grunt.registerTask('build', ['clean','copy:favicons','copy:fonts', 'copy:images', 'copy:vendor', 'sass:build', 'postcss:dist', 'browserify:build', 'uglify']);
 }
