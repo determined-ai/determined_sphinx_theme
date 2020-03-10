@@ -169,7 +169,7 @@ html_show_sourcelink = True
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'PyTorchSphinxthemedemodoc'
+htmlhelp_basename = 'DeterminedAISphinxthemedemodoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
