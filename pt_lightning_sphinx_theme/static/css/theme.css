@@ -9680,16 +9680,6 @@ pre {
       -ms-flex-align: center;
           align-items: center;
 }
-.header-container:before, .header-container:after {
-  content: "";
-  display: table;
-}
-.header-container:after {
-  clear: both;
-}
-.header-container {
-  *zoom: 1;
-}
 @media screen and (min-width: 1100px) {
   .header-container {
     display: block;
@@ -9821,16 +9811,6 @@ pre {
   display: flex;
   height: 68px;
   position: relative;
-}
-.mobile-main-menu .container-fluid:before, .mobile-main-menu .container-fluid:after {
-  content: "";
-  display: table;
-}
-.mobile-main-menu .container-fluid:after {
-  clear: both;
-}
-.mobile-main-menu .container-fluid {
-  *zoom: 1;
 }
 
 .mobile-main-menu.open ul {
@@ -11234,16 +11214,6 @@ body {
   padding: 0;
   width: auto;
   position: relative;
-}
-.pytorch-container:before, .pytorch-container:after {
-  content: "";
-  display: table;
-}
-.pytorch-container:after {
-  clear: both;
-}
-.pytorch-container {
-  *zoom: 1;
 }
 
 .pytorch-content-wrap {
