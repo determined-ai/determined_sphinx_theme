@@ -542,16 +542,16 @@ window.sideMenus = {
   },
 
   handleNavBar: function() {
-    var mainHeaderHeight = document.getElementById('header-holder').offsetHeight;
+    // var mainHeaderHeight = document.getElementById('header-holder').offsetHeight;
 
-    // If we are scrolled past the main navigation header fix the sub menu bar to top of page
-    if (utilities.scrollTop() >= mainHeaderHeight) {
-      document.getElementById("determined-ai-left-menu").classList.add("make-fixed");
-      document.getElementById("determined-ai-page-level-bar").classList.add("left-menu-is-fixed");
-    } else {
-      document.getElementById("determined-ai-left-menu").classList.remove("make-fixed");
-      document.getElementById("determined-ai-page-level-bar").classList.remove("left-menu-is-fixed");
-    }
+    // // If we are scrolled past the main navigation header fix the sub menu bar to top of page
+    // if (utilities.scrollTop() >= mainHeaderHeight) {
+    //   document.getElementById("determined-ai-left-menu").classList.add("make-fixed");
+    //   document.getElementById("determined-ai-page-level-bar").classList.add("left-menu-is-fixed");
+    // } else {
+    //   document.getElementById("determined-ai-left-menu").classList.remove("make-fixed");
+    //   document.getElementById("determined-ai-page-level-bar").classList.remove("left-menu-is-fixed");
+    // }
   },
 
   expandClosestUnexpandedParentList: function (el) {
