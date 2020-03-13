@@ -1,24 +1,3 @@
-// .header-holder {
-//   height: $mobile_header_height;
-
-//   @include full-nav-menu-desktop {
-//     height: $desktop_header_height;
-//   }
-
-//   align-items: center;
-//   display: flex;
-//   left: 0;
-//   margin-left: auto;
-//   margin-right: auto;
-//   position: fixed;
-//   right: 0;
-//   top: 0;
-//   width: 100%;
-//   z-index: 9999;
-//   background-color: $white;
-//   border-bottom: 1px solid $border_grey;
-// }
-
 .header-container {
   position: relative;
   display: flex;
@@ -65,63 +44,6 @@
   }
 }
 
-.header-holder .main-menu {
-  display: none;
-
-  @include full-nav-menu-desktop {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  ul {
-    display: flex;
-    align-items: center;
-    margin: 0;
-  }
-
-  ul li {
-    display: inline-block;
-    margin-right: 40px;
-    position: relative;
-
-    &.active {
-      &:after {
-        content: "•";
-        bottom: -24px;
-        color: $orange;
-        font-size: rem(22px);
-        left: 0;
-        position: absolute;
-        right: 0;
-        text-align: center;
-      }
-
-      a {
-        color: $orange;
-      }
-    }
-
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
-
-  ul li a {
-    color: $white;
-    font-size: rem(18px);
-    letter-spacing: 0;
-    line-height: rem(34px);
-    text-align: center;
-    text-decoration: none;
-
-    @include full-nav-menu-desktop {
-      &:hover {
-        color: $orange;
-      }
-    }
-  }
-}
 
 .mobile-main-menu {
   display: none;
