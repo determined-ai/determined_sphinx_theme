@@ -23,7 +23,7 @@
   <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
   {% endblock %}
 
-  <link rel="shortcut icon" href="/favicons/favicon.ico" />
+  <link rel="shortcut icon" href="{{ pathto('_static/favicons/favicon.ico', 1) }}" />
   {# CANONICAL URL #}
   {% if theme_canonical_url %}
   <link rel="canonical" href="{{ theme_canonical_url }}{{ pagename }}.html" />
@@ -82,64 +82,6 @@
 
   {% include "fonts.html" %}
 </head>
-
-<!--
-<div class="container-fluid header-holder tutorials-header" id="header-holder">
-  <div class="container">
-    <div class="header-container">
-      <a class="header-logo" href="{{ theme_variables.external_urls['home'] }}" aria-label="PyTorch">
-        <img class="call-to-action-img" src="{{ pathto('_static/images/logo-lightning-icon.png', 1) }}"/>
-      </a>
-
-      <div class="main-menu">
-        <ul>
-          <li>
-            <a href="{{ theme_variables.external_urls['get_started'] }}">Get Started</a>
-          </li>
-
-          <li>
-            <a href="{{ theme_variables.external_urls['blog'] }}">Blog</a>
-          </li>
-
-          <li {%- if theme_determined_ai_project == 'tutorials' %} class="active" {% endif %}>
-            <a href="{{ theme_variables.external_urls['tutorials'] }}">Tutorials</a>
-          </li>
-
-          <li {%- if theme_determined_ai_project == 'docs' %} class="active" {% endif %}>
-            <a href="{{ theme_variables.external_urls['docs'] }}">Docs</a>
-          </li>
-
-          <li>
-            <div class="resources-dropdown">
-              <a id="resourcesDropdownButton" data-toggle="resources-dropdown">
-                Resources
-              </a>
-              <div class="resources-dropdown-menu">
-                <a class="nav-dropdown-item" href="{{ theme_variables.external_urls['resources'] }}"">
-                  <span class=dropdown-title>Developer Resources</span>
-                  <p>Find resources and get questions answered</p>
-                </a>
-                <a class=" nav-dropdown-item" href="{{ theme_variables.external_urls['features'] }}">
-                  <span class=dropdown-title>About</span>
-                  <p>Learn about PyTorch’s features and capabilities</p>
-                </a>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <a href="{{ theme_variables.external_urls['github'] }}">Github</a>
-          </li>
-        </ul>
-      </div>
-
-      <a class="main-menu-open-button" href="#" data-behavior="open-mobile-menu"></a>
-    </div>
-
-  </div>
-</div>
--->
-
 
 <body class="determined-ai-body">
 

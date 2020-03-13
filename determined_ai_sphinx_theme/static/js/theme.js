@@ -105,50 +105,6 @@ window.utilities = {
 }
 
 },{}],2:[function(require,module,exports){
-var cookieBanner = {
-  init: function() {
-    cookieBanner.bind();
-
-    var cookieExists = cookieBanner.cookieExists();
-
-    if (!cookieExists) {
-      cookieBanner.setCookie();
-      cookieBanner.showCookieNotice();
-    }
-  },
-
-  bind: function() {
-    $(".close-button").on("click", cookieBanner.hideCookieNotice);
-  },
-
-  cookieExists: function() {
-    var cookie = localStorage.getItem("returningDeterminedAIUser");
-
-    if (cookie) {
-      return true;
-    } else {
-      return false;
-    }
-  },
-
-  setCookie: function() {
-    localStorage.setItem("returningDeterminedAIUser", true);
-  },
-
-  showCookieNotice: function() {
-    $(".cookie-banner-wrapper").addClass("is-visible");
-  },
-
-  hideCookieNotice: function() {
-    $(".cookie-banner-wrapper").removeClass("is-visible");
-  }
-};
-
-$(function() {
-  cookieBanner.init();
-});
-
-},{}],3:[function(require,module,exports){
 window.determinedAIAnchors = {
   bind: function() {
     // Replace Sphinx-generated anchors with anchorjs ones
@@ -168,7 +124,7 @@ window.determinedAIAnchors = {
   }
 };
 
-},{}],4:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 // Modified from https://stackoverflow.com/a/32396543
 window.highlightNavigation = {
   navigationListItems: document.querySelectorAll("#determined-ai-right-menu li"),
@@ -199,8 +155,7 @@ window.highlightNavigation = {
 
     var scrollPosition = utilities.scrollTop();
     var OFFSET_TOP_PADDING = 25;
-    var offset = document.getElementById("header-holder").offsetHeight +
-                 document.getElementById("determined-ai-page-level-bar").offsetHeight +
+    var offset = document.getElementById("determined-ai-page-level-bar").offsetHeight +
                  OFFSET_TOP_PADDING;
 
     var sections = highlightNavigation.sections;
@@ -241,7 +196,7 @@ window.highlightNavigation = {
   }
 };
 
-},{}],5:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 window.mainMenuDropdown = {
   bind: function() {
     $("[data-toggle='ecosystem-dropdown']").on("click", function() {
@@ -268,7 +223,7 @@ window.mainMenuDropdown = {
   }
 };
 
-},{}],6:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 window.mobileMenu = {
   bind: function() {
     $("[data-behavior='open-mobile-menu']").on('click', function(e) {
@@ -300,7 +255,7 @@ window.mobileMenu = {
   }
 };
 
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 window.mobileTOC = {
   bind: function() {
     $("[data-behavior='toggle-table-of-contents']").on("click", function(e) {
@@ -326,7 +281,7 @@ window.mobileTOC = {
   }
 }
 
-},{}],8:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 // Modified from https://stackoverflow.com/a/13067009
 // Going for a JS solution to scrolling to an anchor so we can benefit from
 // less hacky css and smooth scrolling.
@@ -428,7 +383,7 @@ window.scrollToAnchor = {
   }
 };
 
-},{}],9:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 window.sideMenus = {
   rightMenuIsOnScreen: function() {
     return document.getElementById("determined-ai-content-right").offsetParent !== null;
@@ -903,4 +858,4 @@ if (downloadNote.length >= 1) {
     $(".determined-ai-call-to-action-links").hide();
 }
 
-},{"jquery":"jquery"}]},{},[1,2,3,4,5,6,7,8,9,"pt-lightning-sphinx-theme"]);
+},{"jquery":"jquery"}]},{},[1,2,3,4,5,6,7,8,"pt-lightning-sphinx-theme"]);

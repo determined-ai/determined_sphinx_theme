@@ -28,8 +28,7 @@ window.highlightNavigation = {
 
     var scrollPosition = utilities.scrollTop();
     var OFFSET_TOP_PADDING = 25;
-    var offset = document.getElementById("header-holder").offsetHeight +
-                 document.getElementById("determined-ai-page-level-bar").offsetHeight +
+    var offset = document.getElementById("determined-ai-page-level-bar").offsetHeight +
                  OFFSET_TOP_PADDING;
 
     var sections = highlightNavigation.sections;

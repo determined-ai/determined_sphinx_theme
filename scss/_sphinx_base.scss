@@ -875,33 +875,6 @@ a:hover {
   }
 }
 
-.header-holder {
-  position: relative;
-  z-index: 201;
-}
-
-.header-holder .main-menu {
-  ul li {
-    &.active {
-      &:after {
-        color: $red_orange;
-      }
-
-      a {
-        color: $red_orange;
-      }
-    }
-  }
-
-  ul li a {
-    @include full-nav-menu-desktop {
-      &:hover {
-        color: $red_orange;
-      }
-    }
-  }
-}
-
 .mobile-main-menu.open {
   ul li.active a {
     color: $red_orange;
