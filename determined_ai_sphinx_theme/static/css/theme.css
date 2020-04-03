@@ -10081,6 +10081,10 @@ article.determined-ai-article dl {
 }
 article.determined-ai-article dl dt {
   margin-bottom: 0.75rem;
+  font-weight: 900;
+}
+article.determined-ai-article dl dd {
+  margin-left: 1.25rem;
 }
 article.determined-ai-article pre {
   margin-bottom: 2.5rem;
