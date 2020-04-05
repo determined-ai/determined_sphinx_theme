@@ -10795,7 +10795,7 @@ article.determined-ai-article .error .admonition-title {
   background: #cc2f90;
 }
 article.determined-ai-article .sphx-glr-download-link-note.admonition.note,
-article.determined-ai-article .reference.download.internal, article.determined-ai-article .sphx-glr-signature {
+article.determined-ai-article .sphx-glr-signature {
   display: none;
 }
 article.determined-ai-article .admonition > p:last-of-type {
