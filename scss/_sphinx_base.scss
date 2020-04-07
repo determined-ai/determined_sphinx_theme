@@ -3,7 +3,7 @@ $sphinx_medium_width: 1101px;
 $sphinx_full_width_content_width: 700px;
 
 $sphinx_left_menu_wrapper_padding_right: 13.5%;
-$sphinx_left_menu_width: 25%;
+$sphinx_left_menu_width: 20%;
 $sphinx_left_menu_scroll_wrapper_width: 120%;
 
 $sphinx_content_wrap_width: 71%;
@@ -812,20 +812,13 @@ article.determined-ai-article {
 }
 
 .determined-ai-breadcrumbs-wrapper {
-  // width: 100%;
-  flex-basis: 70%;
+  flex-basis: 75%;
   padding: 0 rem(30px);
 
   @include sphinx-medium-size {
-    // float: left;
-    // margin-left: rem(30px);
-    // width: $sphinx_article_width;
   }
 
   @include sphinx-full-size {
-    // width: 850px;
-    // margin-left: rem(30px);
-    flex-basis: rem(850px);
   }
 
   .determined-ai-breadcrumbs-aside {
