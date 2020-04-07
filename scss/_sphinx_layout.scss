@@ -24,46 +24,26 @@ body {
   position: relative;
 
   @include full-nav-menu-desktop {
-    // padding: 0;
   }
 
   @include sphinx-medium-size {
-    // margin-left: 25%;
   }
 
   @include sphinx-full-size {
-    // margin-left: $desktop_menu_width;
   }
-
-  // @include clearfix;
 }
 
 .determined-ai-content-wrap {
-  flex-grow: 1;
-  display: flex;
-  // position: relative;
-  width: 100%;
-  // height: 100%;
-  height: calc(100% - #{$header_height});
   background-color: #ffffff;
-  // overflow: auto;
-  // padding-top: 0;
-
-  // @include clearfix;
+  flex-grow: 1;
+  height: calc(100% - #{$header_height});
+  position: relative;
+  width: 100%;
 
   @include sphinx-medium-size {
-    // padding-top: 45px;
-    // float: left;
-    // width: 100%;
-    // display: block;
-
-    /* d.ai */
-    // height: 100vh;
-    // overflow: auto;
   }
 
   @include sphinx-full-size {
-    // width: 100%;
   }
 }
 
@@ -76,15 +56,15 @@ body {
 
 .determined-ai-content-left {
   flex-basis: 100%;
-  padding: rem(30px);
+  height: 100%;
   overflow: auto;
+  padding: rem(30px);
 
   @include sphinx-medium-size {
-    flex-basis: 70%;
+    padding: rem(30px) calc(25% + #{rem(30px)}) rem(30px) rem(30px);
   }
 
   @include sphinx-full-size {
-    flex-basis: rem(850px);
   }
 
   .main-content {
@@ -103,15 +83,16 @@ body {
   flex-grow: 1;
   display: none;
   padding: rem(30px) rem(15px);
+  position: absolute;
   overflow: auto;
-  // position: relative;
-  // overflow-x: hidden;
-  // overflow-y: hidden;
+  right: 0;
+  top: 0;
+  width: 25%;
 
   @include sphinx-medium-size {
     /* d.ai */
     display: block;
-    flex-basis: rem(300px);
+    // flex-basis: rem(300px);
     // position: fixed;
     // right: 0;
     // width: 21%;
@@ -188,7 +169,6 @@ body {
   }
 
   @include sphinx-full-size {
-    width: rem($desktop_menu_width);
   }
 }
 
@@ -201,14 +181,12 @@ body {
   margin-bottom: rem(16px);
   padding: 0;
   text-transform: none;
-  // white-space: nowrap;
 }
 
 .determined-ai-left-menu-search {
   padding: 0;
 
   @include sphinx-medium-size {
-    // margin: rem(20px) rem(10px) rem(30px) 0;
   }
 }
 
@@ -239,12 +217,12 @@ body {
   }
 }
 
-.determined-ai-left-menu-search input[type=text] {
+.determined-ai-left-menu-search div[role=search] {
   display: flex;
   align-items: center;
   width: 100%;
   height: $header_height;
-  padding: 0 42px 0 54px;
+  padding: 0 0 0 54px;
   border: 0;
   border-bottom: solid 1px $border_grey;
   border-radius: 0;
@@ -256,8 +234,13 @@ body {
   color: $oxford_blue;
   font-size: rem(16px);
 
-  &:focus {
-    outline: 0;
+  form { width: 100%; }
+  input[type=text] {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+
+    &:focus { outline: 0; }
   }
 }
 
@@ -627,35 +610,15 @@ body {
   z-index: 201;
 
   @include sphinx-medium-size {
-    // left: 0;
     display: flex;
     flex-basis: $header_height;
     flex-shrink: 0;
-    // padding-left: 0;
-    // position: absolute;
     z-index: 1;
-
-    // &.left-menu-is-fixed {
-    //   position: fixed;
-    //   top: 0;
-    //   left: 25%;
-    //   padding-left: 0;
-    //   right: 0;
-    //   width: 75%;
-    // }
   }
 
   @include sphinx-full-size {
-    // left: 0;
-    // right: 0;
     width: auto;
     z-index: 1;
-
-    // &.left-menu-is-fixed {
-    //   left: $desktop_menu_width;
-    //   right: 0;
-    //   width: auto;
-    // }
   }
 
   ul, li {
@@ -669,12 +632,9 @@ body {
 
   @include sphinx-medium-size {
     font-size: rem(14px);
-    // float: left;
-    // margin-left: rem(30px);
   }
 
   @include sphinx-full-size {
-    // margin-left: rem(30px);
   }
 }
 
