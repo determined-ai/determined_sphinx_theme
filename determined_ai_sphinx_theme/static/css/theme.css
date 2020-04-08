@@ -10158,6 +10158,12 @@ p a:hover {
   height: 20px;
 }
 
+.version {
+  color: #6c6c6d;
+  font-size: 0.875rem;
+  padding: 1.875rem 1.875rem 0 1.875rem;
+}
+
 .wy-breadcrumbs li a {
   color: #f77b21;
 }
@@ -11189,16 +11195,11 @@ body {
   right: 0;
   top: 0;
   width: 25%;
+  height: 100%;
 }
 @media screen and (min-width: 1101px) {
   .determined-ai-content-right {
-    /* d.ai */
     display: block;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .determined-ai-content-right {
-    /* d.ai */
   }
 }
 
@@ -11224,6 +11225,8 @@ body {
 .determined-ai-left-menu {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   display: none;
   position: absolute;
   width: 100%;
@@ -11309,13 +11312,28 @@ body {
 .determined-ai-left-menu-search div[role=search] form {
   width: 100%;
 }
-.determined-ai-left-menu-search div[role=search] input[type=text] {
+.determined-ai-left-menu-search div[role=search] input[type="text"] {
   background-color: transparent;
   border: 0;
   width: 100%;
 }
-.determined-ai-left-menu-search div[role=search] input[type=text]:focus {
+.determined-ai-left-menu-search div[role=search] input[type="text"]:focus {
   outline: 0;
+}
+.determined-ai-left-menu-search div[role=search] input[type="text"]:-moz-autofill, .determined-ai-left-menu-search div[role=search] input[type="text"]:-moz-autofill:active, .determined-ai-left-menu-search div[role=search] input[type="text"]:-moz-autofill:focus, .determined-ai-left-menu-search div[role=search] input[type="text"]:-moz-autofill:hover {
+  -moz-text-fill-color: #f77b21;
+  box-shadow: 0 0 0px 1000px #f7f7f7 inset;
+  font-size: 1rem;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.determined-ai-left-menu-search div[role=search] input[type="text"]:-webkit-autofill, .determined-ai-left-menu-search div[role=search] input[type="text"]:-webkit-autofill:active, .determined-ai-left-menu-search div[role=search] input[type="text"]:-webkit-autofill:focus, .determined-ai-left-menu-search div[role=search] input[type="text"]:-webkit-autofill:hover {
+  -webkit-text-fill-color: #f77b21;
+  -webkit-box-shadow: 0 0 0px 1000px #f7f7f7 inset;
+          box-shadow: 0 0 0px 1000px #f7f7f7 inset;
+  font-size: 1rem;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 @media screen and (min-width: 1101px) {
