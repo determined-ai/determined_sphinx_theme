@@ -88,33 +88,19 @@ body {
   right: 0;
   top: 0;
   width: 25%;
+  height: 100%;
 
   @include sphinx-medium-size {
-    /* d.ai */
     display: block;
-    // flex-basis: rem(300px);
-    // position: fixed;
-    // right: 0;
-    // width: 21%;
-    // height: calc(100% - #{$desktop_header_height / 2});
-    // margin-left: 0;
-    // overflow: auto;
   }
 
   @include sphinx-full-size {
-    /* d.ai */
-    // position: fixed;
-    // top: 45px;
-    // right: 0;
-    // width: calc(100% - 910px - #{$desktop_menu_width});
   }
 }
 
 .determined-ai-side-scroll {
   @include sphinx-medium-size {
     position: relative;
-    // overflow-x: hidden;
-    // overflow-y: scroll;
     height: 100%;
   }
 }
@@ -236,12 +222,32 @@ body {
   font-size: rem(16px);
 
   form { width: 100%; }
-  input[type=text] {
+  input[type="text"] {
     background-color: transparent;
     border: 0;
     width: 100%;
 
     &:focus { outline: 0; }
+
+    &:-moz-autofill,
+    &:-moz-autofill:active,
+    &:-moz-autofill:focus,
+    &:-moz-autofill:hover {
+      -moz-text-fill-color: $red_orange;
+      box-shadow: 0 0 0px 1000px #f7f7f7 inset;
+      font-size: rem(16px);
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:active, 
+    &:-webkit-autofill:focus, 
+    &:-webkit-autofill:hover {
+      -webkit-text-fill-color: $red_orange;
+      box-shadow: 0 0 0px 1000px #f7f7f7 inset;
+      font-size: rem(16px);
+      transition: background-color 5000s ease-in-out 0s;
+    }
   }
 }
 

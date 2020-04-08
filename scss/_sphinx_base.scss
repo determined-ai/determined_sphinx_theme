@@ -84,6 +84,12 @@ p {
   height: 20px;
 }
 
+.version {
+  color: $dark_grey;
+  font-size: rem(14px);
+  padding: rem(30px) rem(30px) 0 rem(30px);
+}
+
 .wy-breadcrumbs li a {
   color: $red_orange;
 }
