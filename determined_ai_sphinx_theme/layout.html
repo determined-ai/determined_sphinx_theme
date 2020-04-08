@@ -107,7 +107,9 @@
         aria-label="main navigation">
         <div class="determined-ai-left-menu-search">
           <div class="logo">
-            <img src="{{ pathto('_static/images/logo-determined-ai.svg', 1) }}" class="logo-dai" />
+            <a href="{{ pathto(master_doc) }}">
+              <img src="{{ pathto('_static/images/logo-determined-ai.svg', 1) }}" class="logo-dai" />
+            </a>
           </div>
 
           {% block sidebartitle %}
