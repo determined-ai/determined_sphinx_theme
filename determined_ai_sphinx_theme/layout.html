@@ -89,10 +89,11 @@
 
   {# SIDE NAV, TOGGLES ON MOBILE #}
 
-  <div class="table-of-contents-link-wrapper" data-behavior="toggle-table-of-contents">
-    <img src="{{ pathto('_static/images/logo-determined-ai.svg', 1) }}" class="logo-dai" />
-    <!-- <a href="#" class="toggle-table-of-contents"></a> -->
-    <a href="#" class="hamburger hamburger--vortex" type="button">
+  <div class="table-of-contents-link-wrapper">
+    <a href="{{ pathto(master_doc) }}">
+      <img src="{{ pathto('_static/images/logo-determined-ai.svg', 1) }}" class="logo-dai" />
+    </a>
+    <a href="#" class="hamburger hamburger--vortex" type="button" data-behavior="toggle-table-of-contents">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
@@ -102,7 +103,6 @@
   <div class="main">
 
     <nav data-toggle="wy-nav-shift" class="determined-ai-left-menu" id="determined-ai-left-menu">
-      <!-- <div class="determined-ai-side-scroll"> -->
       <div class="determined-ai-menu determined-ai-menu-vertical" data-spy="affix" role="navigation"
         aria-label="main navigation">
         <div class="determined-ai-left-menu-search">
@@ -150,7 +150,6 @@
           {% endblock %}
         </div>
       </div>
-      <!-- </div> -->
     </nav>
 
     <div class="determined-ai-container">
