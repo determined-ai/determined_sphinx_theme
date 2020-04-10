@@ -10063,7 +10063,7 @@ article.determined-ai-article table.docutils.field-list td.field-body p:last-of-
 }
 article.determined-ai-article ul,
 article.determined-ai-article ol {
-  margin: 1.5rem 0 3.125rem 0;
+  margin: 0 0 1.125rem 0;
 }
 @media screen and (min-width: 768px) {
   article.determined-ai-article ul,
@@ -10303,7 +10303,6 @@ a:visited.has-code span {
 article.determined-ai-article ul,
 article.determined-ai-article ol {
   padding-left: 1.875rem;
-  margin: 0;
 }
 article.determined-ai-article ul li,
 article.determined-ai-article ol li {
@@ -11176,9 +11175,6 @@ body {
   .determined-ai-content-left {
     padding: 1.875rem calc(25% + 1.875rem) 1.875rem 1.875rem;
   }
-}
-.determined-ai-content-left .main-content ul.simple {
-  padding-bottom: 1.25rem;
 }
 .determined-ai-content-left .main-content .note:nth-child(1), .determined-ai-content-left .main-content .warning:nth-child(1) {
   margin-top: 0;
