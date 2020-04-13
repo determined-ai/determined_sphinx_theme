@@ -10428,6 +10428,19 @@ article.determined-ai-article .sphx-glr-thumbcontainer .figure a.reference.inter
   }
 }
 
+article.determined-ai-article .image-reference {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+article.determined-ai-article .image-reference img.align-center {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
 article.determined-ai-article .section :not(dt) > code {
   color: #262626;
   border-top: solid 2px #f3f4f7;
