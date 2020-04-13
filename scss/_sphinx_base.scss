@@ -760,6 +760,16 @@ article.determined-ai-article {
   }
 }
 
+article.determined-ai-article {
+  .image-reference {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-reference > img.align-center {
+    align-self: center;
+  }
+}
+
 a[rel~="prev"], a[rel~="next"] {
   padding: 0.375rem 0 0 0;
 }
