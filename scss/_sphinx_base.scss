@@ -357,6 +357,15 @@ article.determined-ai-article .sphx-glr-thumbcontainer {
 }
 
 article.determined-ai-article {
+  .image-reference {
+    display: flex;
+    flex-direction: column;
+
+    img.align-center {
+      align-self: center;
+    }
+  }
+
   .section {
     :not(dt) > code {
       color: $not_quite_black;
