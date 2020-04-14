@@ -98,13 +98,6 @@ body {
   }
 }
 
-.determined-ai-side-scroll {
-  @include sphinx-medium-size {
-    position: relative;
-    height: 100%;
-  }
-}
-
 .determined-ai-menu-vertical {
   display: flex;
   flex-direction: column;
@@ -251,7 +244,7 @@ body {
   }
 }
 
-.determined-ai-left-menu .determined-ai-side-scroll {
+.determined-ai-left-menu {
   @include sphinx-medium-size {
     width: $sphinx_left_menu_scroll_wrapper_width;
   }
@@ -531,7 +524,7 @@ body {
     }
   }
 
-  .determined-ai-side-scroll > ul > li > ul > li {
+  * > ul > li > ul > li {
     margin-bottom: 0;
   }
 
@@ -562,7 +555,7 @@ body {
   }
 }
 
-.determined-ai-right-menu .determined-ai-side-scroll {
+.determined-ai-right-menu {
   padding: rem(30px) 0;
 
   @include sphinx-medium-size {

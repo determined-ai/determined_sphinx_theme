@@ -73,7 +73,7 @@ function ThemeNav () {
         var doc = $(document),
             self = this;
 
-        this.navBar = $('div.determined-ai-side-scroll:first');
+        this.navBar = $('div.determined-ai-menu:first');
         this.win = $(window);
 
         // Set up javascript UX bits

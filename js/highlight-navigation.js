@@ -50,17 +50,6 @@ window.highlightNavigation = {
           }
 
           navigationListItem.classList.add("active");
-
-          // Scroll to active item. Not a requested feature but we could revive it. Needs work.
-
-          // var menuTop = $("#determined-ai-right-menu").position().top;
-          // var itemTop = navigationListItem.getBoundingClientRect().top;
-          // var TOP_PADDING = 20
-          // var newActiveTop = $("#determined-ai-side-scroll-right").scrollTop() + itemTop - menuTop - TOP_PADDING;
-
-          // $("#determined-ai-side-scroll-right").animate({
-          //   scrollTop: newActiveTop
-          // }, 100);
         }
 
         break;

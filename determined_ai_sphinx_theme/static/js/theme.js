@@ -177,17 +177,6 @@ window.highlightNavigation = {
           }
 
           navigationListItem.classList.add("active");
-
-          // Scroll to active item. Not a requested feature but we could revive it. Needs work.
-
-          // var menuTop = $("#determined-ai-right-menu").position().top;
-          // var itemTop = navigationListItem.getBoundingClientRect().top;
-          // var TOP_PADDING = 20
-          // var newActiveTop = $("#determined-ai-side-scroll-right").scrollTop() + itemTop - menuTop - TOP_PADDING;
-
-          // $("#determined-ai-side-scroll-right").animate({
-          //   scrollTop: newActiveTop
-          // }, 100);
         }
 
         break;
@@ -669,7 +658,7 @@ function ThemeNav () {
         var doc = $(document),
             self = this;
 
-        this.navBar = $('div.determined-ai-side-scroll:first');
+        this.navBar = $('div.determined-ai-menu:first');
         this.win = $(window);
 
         // Set up javascript UX bits
