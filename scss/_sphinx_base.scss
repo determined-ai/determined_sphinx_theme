@@ -361,10 +361,12 @@ article.determined-ai-article .sphx-glr-thumbcontainer {
 
 article.determined-ai-article {
   .image-reference {
-    border: solid 1px #999999;
     display: flex;
     flex-direction: column;
 
+    img {
+      border: solid 1px #999999;
+    }
     img.align-center {
       align-self: center;
     }
