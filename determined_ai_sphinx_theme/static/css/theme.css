@@ -10443,6 +10443,9 @@ article.determined-ai-article .image-reference {
 article.determined-ai-article .image-reference img {
   border: solid 1px #999999;
 }
+article.determined-ai-article .image-reference img {
+  border: solid 1px #999999;
+}
 article.determined-ai-article .image-reference img.align-center {
   -ms-flex-item-align: center;
       align-self: center;
@@ -11942,5 +11945,3 @@ body {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-
-/*# sourceMappingURL=theme.css.map */
