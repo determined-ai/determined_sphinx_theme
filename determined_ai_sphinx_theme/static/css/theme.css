@@ -10141,6 +10141,10 @@ p a:hover {
   color: #f77b21;
 }
 
+.align-center {
+  text-align: center;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10428,6 +10432,7 @@ article.determined-ai-article .sphx-glr-thumbcontainer .figure a.reference.inter
 }
 
 article.determined-ai-article .image-reference {
+  border: solid 1px #999999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10929,6 +10934,20 @@ article.determined-ai-article .wy-table-responsive table tbody td .pre {
 }
 article.determined-ai-article .wy-table-responsive table tbody td code {
   font-size: 87.5%;
+}
+
+article.determined-ai-article .image-reference {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+article.determined-ai-article .image-reference > img.align-center {
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 a[rel~="prev"], a[rel~="next"] {
