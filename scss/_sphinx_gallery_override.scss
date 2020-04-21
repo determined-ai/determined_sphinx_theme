@@ -1,0 +1,6 @@
+/* Sphinx gallery generates download links with fixed paths that assume a doc
+   build structure different than ours. This CSS rule hides the sphinx-generated
+   download galleries in HTML so that we don't display broken links */
+.sphx-glr-download {
+  display: none;
+}
