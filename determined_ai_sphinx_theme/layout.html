@@ -351,6 +351,14 @@
       });
     })
   </script>
+
+  {% if theme_kickfire_id %}
+  <script type="text/javascript">
+    var DID={{ theme_kickfire_id }};
+    var MyPageName = window.location.href.replace("http://","");
+  </script>
+  <script async src="//stats.sa-as.com/live.js"></script>
+  {% endif %}
 </body>
 
 </html>
