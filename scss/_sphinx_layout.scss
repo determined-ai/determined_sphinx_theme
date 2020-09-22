@@ -391,9 +391,9 @@ body {
   }
 
   li.toctree-l1.current li.toctree-l2, li.toctree-l2.current li.toctree-l3 {
-    > ul {
+/*    > ul {
       display: none;
-    }
+    }*/
 
     &.current > ul {
       display: block;
@@ -401,6 +401,7 @@ body {
   }
 
   li.toctree-l2 {
+    margin-left: .5em;
     &.current {
       > a {
       }
@@ -419,6 +420,7 @@ body {
 
   li.toctree-l3 {
     font-size: 0.9em;
+    margin-left: 1em;
 
     &.current {
       > a {

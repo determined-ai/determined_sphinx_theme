@@ -213,6 +213,10 @@ h1 {
   margin: rem(22px) 0;
 }
 
+h1 .has-code {
+  text-transform: initial;
+}
+
 span.pre {
   color: $content_text_color;
   background-color: $light_grey;
@@ -488,7 +492,7 @@ article.determined-ai-article {
     dt {
       border-left: none;
       border-top: 3px solid $red_orange;
-      padding-left: 4em;
+      padding-left: 5em;
       em.property {
         position: absolute;
         left: 0.5rem;
@@ -515,7 +519,6 @@ article.determined-ai-article {
     dl dt em.property {
       position: static;
       left: 0;
-      padding-right: 0;
     }
 
     .method,
