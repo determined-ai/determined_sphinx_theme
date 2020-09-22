@@ -153,8 +153,8 @@ body {
   color: $not_quite_black;
   display: block;
   display: inline-block;
-  font-size: rem(16px);
-  line-height: rem(22px);
+  font-size: rem(20px);
+  line-height: rem(24px);
   margin-bottom: rem(16px);
   padding: 0;
   text-transform: none;
@@ -309,8 +309,8 @@ body {
   a:visited,
   a:hover {
     color: $quick_start_grey;
-    font-size: rem(14px);
-    line-height: rem(16px);
+    font-size: rem(18px);
+    line-height: rem(24px);
     padding: 0;
     text-decoration: none;
     &.reference.internal {
@@ -347,7 +347,7 @@ body {
       float: left;
       margin-left: -1.2em;
 
-      font-size: 0.8em;
+      font-size: rem(18px);
       line-height: 1.6em;
     }
   }
@@ -388,6 +388,8 @@ body {
 
   // This is the on state for pages beyond second level
   li.toctree-l2 a, li.toctree-l3 a, li.toctree-l4 a {
+    font-size: rem(16px);
+    line-height: 1.7;
   }
 
   li.toctree-l1.current li.toctree-l2, li.toctree-l2.current li.toctree-l3 {
