@@ -136,10 +136,8 @@
                 toctree is empty. Skip building this for now.
               #}
           {% if 'singlehtml' not in builder %}
-          {% set global_toc = toctree(maxdepth=1,
-                                            collapse=theme_collapse_navigation|tobool,
-                                            includehidden=theme_includehidden|tobool,
-                                            titles_only=theme_titles_only|tobool) %}
+          {% set global_toc = toctree(maxdepth=3,
+                                            includehidden=theme_includehidden|tobool) %}
           {% endif %}
           {% if global_toc %}
           {{ global_toc }}
@@ -214,13 +212,13 @@
             {%- endblock %}
           </div>
 
-          <div class="determined-ai-content-right" id="determined-ai-content-right">
-            <div class="determined-ai-right-menu" id="determined-ai-right-menu">
+   <!--        <div class="determined-ai-content-right" id="determined-ai-content-right">
+            <div class="determined-ai-right-menu" id="determined-ai-right-menu"> -->
               <!-- <div class="determined-ai-side-scroll" id="determined-ai-side-scroll-right"> -->
-              {{ toc }}
+              <!-- {{ toc }} -->
               <!-- </div> -->
-            </div>
-          </div>
+<!--             </div>
+          </div> -->
       </section>
     </div>
 
